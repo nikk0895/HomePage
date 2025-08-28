@@ -1781,6 +1781,7 @@ background: #ea580c;
 /* the explore package section  */
 /* ---------------- Explore Packages Section ---------------- */
 .explore-packages {
+  width: 100%;
 max-width: 1440px;
 margin: 0 auto;
 padding: 2.5rem 1rem;
@@ -1818,7 +1819,7 @@ text-decoration: underline;
 display: flex;
 gap: 1.5 rem;
 overflow-x: auto;
-/* padding: 0 1rem; */
+padding: 0 1rem;
 padding-bottom: 1 rem;
 scroll-snap-type: x mandatory;
 }
@@ -1848,6 +1849,7 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 position: relative;
 width: 100%;
 height: 185px;
+overflow: hidden;
 }
 
 .card-image img {
@@ -1879,14 +1881,13 @@ padding: 1rem;
 flex: 1;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
 }
 
 .card-title {
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 0.5rem;
+/* margin-bottom: 0.5rem; */
 }
 
 .card-title h3 {
@@ -2001,313 +2002,384 @@ overflow-x: visible;
 /* top experience section  */
 /* ---------------- Andaman Experiences ---------------- */
 .ae-top-experiences {
-max-width: 1440px;
-margin: 0 auto;
-padding: 0 1rem;
-background-color: #FAF3E3;
-padding: 4rem 1.5rem;
-display: flex;
-flex-direction: column;
-align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: #faf3e3;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ae-section-title {
-text-align: center;
-margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .ae-section-title h2 {
-font-size: 32px;
-font-weight: bold;
-color: #0D0D0D;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0d0d0d;
 }
 
 .ae-section-title p {
-font-size: 18px;
-color: #3D3D3D;
-margin-top: 1rem;
+  font-size: 18px;
+  color: #3d3d3d;
+  margin-top: 1rem;
 }
 
 .ae-experience-category {
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .ae-category-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .ae-category-header h3 {
-font-size: 20px;
-font-weight: bold;
-color: #0D0D0D;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d0d0d;
 }
 
 .ae-category-header a {
-font-size: 14px;
-font-weight: 500;
-color: #F97316;
-text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f97316;
+  text-decoration: none;
 }
 
 .ae-category-header a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ae-cards-wrapper {
-display: flex;
-gap: 1.5rem;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-padding-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  /* Enhanced horizontal scrolling for mobile devices */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
 .ae-cards-wrapper::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .ae-experience-card {
-position: relative;
-flex-shrink: 0;
-min-width: 295px;
-border-radius: 15px;
-overflow: hidden;
-scroll-snap-align: start;
+  position: relative;
+  flex-shrink: 0;
+  min-width: 295px;
+  border-radius: 15px;
+  overflow: hidden;
+  scroll-snap-align: start;
 }
 
 .ae-experience-card img {
-width: 100%;
-height: 224px;
-object-fit: cover;
+  width: 100%;
+  height: 224px;
+  object-fit: cover;
 }
 
 .ae-card-overlay {
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 0.75rem;
-background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }
 
 .ae-card-overlay p {
-color: #fff;
-font-size: 14px;
-font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-@media(min-width: 1024px){
-.ae-cards-wrapper {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 1.5rem;
-overflow-x: visible;
-scroll-snap-type: none;
+/* Added responsive media queries for better horizontal scrolling */
+@media (max-width: 480px) {
+  .ae-experience-card {
+    min-width: 280px;
+  }
+
+  .ae-cards-wrapper {
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
-.ae-experience-card {
-min-width: 0;
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .ae-experience-card {
+    min-width: 320px;
+  }
+
+  .ae-cards-wrapper {
+    gap: 1.25rem;
+  }
 }
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .ae-experience-card {
+    min-width: 350px;
+  }
+
+  .ae-cards-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ae-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    /* Reset webkit scrolling for desktop grid layout */
+    -webkit-overflow-scrolling: auto;
+  }
+  .ae-experience-card {
+    min-width: 0;
+  }
 }
 
 
 /* ---------------- Testimonial Section ---------------- */
-.ts-container {
-max-width: 1440px;
-margin: 0 auto;
-padding: 0 1rem;
-}
-
+/* ---------- Testimonial Section ---------- */
 .ts-testimonial-section {
-padding: 2rem 1rem;
-display: flex;
-flex-direction: column;
-align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
 }
 
 .ts-testimonial-section h2 {
-font-size: 30px;
-font-weight: bold;
-color: #0D0D0D;
-margin-bottom: 1.5rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0D0D0D;
+  margin-bottom: 1.5rem;
 }
 
 .ts-testimonial-cards {
-display: flex;
-gap: 1rem;
-overflow-x: auto;
-padding-bottom: 1rem;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
 }
 
 .ts-testimonial-cards::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .ts-testimonial-card {
-flex-shrink: 0;
-width: 400px;
-background: #fff;
-border-radius: 20px;
-overflow: hidden;
-padding: 1rem;
-height: 355px;
-display: flex;
-flex-direction: column;
-align-items: center;
-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1rem;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .ts-video-wrapper {
-width: 100%;
-height: 300px;
-border-radius: 20px;
-overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
 .ts-video-wrapper iframe {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .ts-testimonial-card .ts-name {
-margin-top: 0.75rem;
-font-size: 16px;
-font-weight: bold;
-color: #3D3D3D;
+  margin-top: 0.75rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3D3D3D;
 }
 
 .ts-testimonial-card .ts-profession {
-font-size: 12px;
-font-weight: 600;
-color: #747474;
+  font-size: 12px;
+  font-weight: 600;
+  color: #747474;
+}
+/* Responsive */
+/* ✅ Enable horizontal scroll for mobile & tablet */
+@media (max-width: 1024px) {
+  .cards-container {
+    flex-wrap: nowrap;          /* disable wrapping */
+    overflow-x: auto;           /* allow horizontal scroll */
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+  }
+
+
+  .testimonial-card {
+    flex: 0 0 80%;              /* card takes ~80% width */
+    max-width: 320px;
+    scroll-snap-align: start;
+  }
 }
 
-@media(min-width: 1024px){
-.ts-testimonial-cards {
-overflow-x: visible;
-display: flex;
-justify-content: space-between;
-}
-.ts-testimonial-card {
-flex: 1;
-max-width: 400px;
-}
-}
+
 /* the cab section  */
 /* ------------------ Cab Section ------------------ */
 .cab-section {
-max-width: 1240px;
-margin: 0 auto;
-background-color: #0E4AA3;
-border-radius: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-padding: 3rem 1.5rem;
-position: relative;
-overflow: hidden;
-}
-
-@media(min-width:1024px){
-.cab-section {
-flex-direction: row;
-padding: 3rem 3rem;
-}
-}
-
-.cab-text {
-width: 100%;
-text-align: center;
-z-index: 2;
-}
-
-@media(min-width:1024px){
-.cab-text {
-width: 619px;
-text-align: left;
-}
-}
-
-.cab-text h2 {
-font-size: 28px;
-font-weight: bold;
-line-height: 1.2;
-color: #fff;
-margin-bottom: 0.25rem;
-}
-
-.cab-text h3 {
-font-size: 28px;
-font-weight: bold;
-line-height: 1.2;
-color: #2DB5E8;
-margin-top: 0.25rem;
-}
-
-.cab-text p {
-font-size: 0.875rem;
-line-height: 1.6;
-color: #D0D8E5;
-margin-top: 1rem;
-}
-
-.cab-btn {
-margin-top: 1.5rem;
-width: 140px;
-height: 44px;
-background-color: #F97316;
-color: #fff;
-font-size: 15px;
-font-weight: 600;
-border-radius: 9999px;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 0.5rem;
-border: none;
-cursor: pointer;
-}
-.cab-image {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: flex-end; /* keep car + girl aligned at bottom */
-position: relative;
-margin-top: 2.5rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #0E4AA3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
+  .cab-section {
+    flex-direction: row;
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .cab-section {
+    margin: 0 1rem;         /* adds left & right margin */
+    padding: 2rem 1rem;     /* reduce padding so content breathes */
+  }
+}
+
+
+.cab-text {
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .cab-text {
+    width: 619px;
+    text-align: left;
+  }
+}
+
+.cab-text h2 {
+  font-size: 22px;  /* smaller for mobile */
+  font-weight: bold;
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.cab-text h3 {
+  font-size: 28px;  /* reduced for mobile */
+  font-weight: bold;
+  line-height: 1.3;
+  color: #2DB5E8;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .cab-text h2 { font-size: 26px; }
+  .cab-text h3 { font-size: 46px; }
+}
+
+.cab-text p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #D0D8E5;
+  margin-top: 1rem;
+}
+
+.cab-btn {
+  margin: 1.5rem auto 0 auto;   /* center on mobile */
+  width: 140px;
+  height: 44px;
+  background-color: #F97316;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Left-align again on desktop */
+@media (min-width: 1024px) {
+  .cab-btn {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+
+/* ---------- IMAGE CONTAINER ---------- */
 .cab-image {
-width: 50%;
-margin-top: 0;
-}
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 2.5rem;
 }
 
+@media (min-width: 1024px) {
+  .cab-image {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+/* ---------- CAR IMAGE ---------- */
 .cab-car {
-width: 50%;
-z-index: 10;
-transform: translateX(-50px); /* ✅ move car slightly left */
+  width: 200px;  /* default small */
+  z-index: 10;
+  transform: translateX(-30px);
 }
 
-@media (min-width: 640px) { .cab-car { width: 280px; } }
+@media (min-width: 640px) { .cab-car { width: 250px; } }
 @media (min-width: 768px) { .cab-car { width: 300px; } }
 @media (min-width: 1024px) { .cab-car { width: 340px; } }
 
+/* ---------- GIRL IMAGE ---------- */
 .cab-girl {
-min-width: 30%;
-max-width: 95%;
-position: absolute;
-bottom: 0;
-left: 70%;
-transform: translate(-50%, 45%); /* ✅ center + move girl up */
-z-index: 40;
+  width: 100%;      
+  max-width: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  transform: translate(-60%, 20%);
+  z-index: 40;
 }
 
 @media (min-width: 640px) { .cab-girl { width: 400px; } }
 @media (min-width: 768px) { .cab-girl { width: 500px; } }
 @media (min-width: 1024px) { .cab-girl { width: 600px; } }
-
 
 
 /* ------------------ FAQ Section ------------------ */
@@ -2329,6 +2401,7 @@ margin-bottom: 1.5rem;
 
 .faq-container {
 display: flex;
+text-align: left;
 flex-direction: column;
 gap: 1.5rem;
 }
@@ -2381,7 +2454,7 @@ color: #3D3D3D;
 }
 
 /* the island section  */
-/* -------- About Island Section -------- */
+/* -------- About Andaman Island Section -------- */
 .about-island {
 width: 100%;
 max-width: 1440px;
@@ -2503,7 +2576,6 @@ justify-content: center; /* align like cab-section */
 width: 100%;
 }
 
-
 .travel-card {
 flex-shrink: 0;
 width: 400px;
@@ -2564,11 +2636,34 @@ font-weight: 500;
 line-height: 1.6;
 color: #3D3D3D;
 }
+/* ---------- Mobile Adjustments (≤768px) ---------- */
+@media (max-width: 768px) {
+  .travel-cards
+   {
+    display: flex;
+    flex-wrap: nowrap;              /* no wrapping */
+    overflow-x: auto;               /* horizontal scroll */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;  /* snap to each card */
+    justify-content: flex-start;    /* <-- important: don't center, start at card 1 */
+  }
+
+  .travel-cards::-webkit-scrollbar {
+    display: none;                  /* hide scrollbar */
+  }
+
+  .travel-card {
+    flex: 0 0 100%;                 /* each card takes full width */
+    min-width: 100%;
+    scroll-snap-align: start;       /* snap each card neatly */
+  }
+}
 
 /* Form Section Container */
 .form-section {
-width: 100%;
 max-width: 1240px;
+height: 443px;
 margin: 0 auto 64px auto;
 display: flex;
 flex-direction: column;
@@ -2578,14 +2673,11 @@ padding: 40px 32px;
 background: linear-gradient(255.31deg, #3E5EBA -12.44%, #1E3A8A 96.61%);
 overflow: hidden;
 }
-
-@media (min-width: 1024px) {
-.form-section {
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 60px 50px;
-}
+@media (max-width: 768px) {
+  .form-section {
+    margin: 0 1rem;         /* adds left & right margin */
+    padding: 2rem 1rem;     /* reduce padding so content breathes */
+  }
 }
 
 /* Left Side */
@@ -2602,15 +2694,6 @@ color: #fff;
 text-align: center;
 margin-bottom: 28px;
 }
-
-@media (min-width: 1024px) {
-.form-title {
-font-size: 30px;
-text-align: left;
-margin-bottom: 36px;
-}
-}
-
 /* Form */
 .form {
 display: flex;
@@ -2623,13 +2706,6 @@ display: grid;
 grid-template-columns: 1fr;
 gap: 28px;
 }
-
-@media (min-width: 640px) {
-.form-row {
-grid-template-columns: 1fr 1fr;
-}
-}
-
 .form-group label {
 display: block;
 color: white;
@@ -2659,7 +2735,6 @@ align-items: center;
 border-bottom: 1px solid white;
 padding: 6px 0;
 }
-
 .form-phone select {
 background: transparent;
 color: white;
@@ -2711,13 +2786,6 @@ font-weight: 600;
 font-size: 15px;
 cursor: pointer;
 }
-
-@media (min-width: 1024px) {
-.form-submit {
-margin: 12px 0 0 0;
-}
-}
-
 /* Right Side */
 .form-right {
 width: 100%;
@@ -2726,23 +2794,72 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 }
-
-@media (min-width: 1024px) {
-.form-right {
-max-width: 320px;
-margin: 0;
-}
-}
-
 .form-right img {
-width: 100%;
+max-width: 100%;
 height: auto;
+border-radius: 12px;
 object-fit: contain;
-transform: translateY(-40px); /* keeps suitcase & items floating */
+transform: translateY(10px); /* keeps suitcase & items floating */
+}
+/* ---------- Mobile First Default ---------- */
+/* (already handled in base styles above) */
+
+/* ---------- Small Devices (≥640px) ---------- */
+@media (min-width: 640px) {
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
 }
 
+/* ---------- Tablets (≤768px) ---------- */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+    height: auto;        /* let height expand naturally */
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    display: flex;       /* reset grid */
+  }
+
+  .form-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-right img {
+    max-width: 70%;      /* compress image */
+    height: auto;
+    margin-top: 20px;    /* move image down slightly */
+  }
+}
+
+/* ---------- Large Devices (≥1024px) ---------- */
+@media (min-width: 1024px) {
+  .form-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+  }
+
+  .form-title {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+
+  .form-submit {
+    margin: 12px 0 0 0;
+  }
+}
 /* the footer section  */
-.video-modal {
+/* .video-modal {
 position: fixed;
 inset: 0;
 background: rgba(0, 0, 0, 0.7);
@@ -2780,13 +2897,12 @@ cursor: pointer;
 
 .hidden {
 display: none;
-}
-/* the footer section */
-/* ================= Footer ================= */
-/* .footer {
-
 } */
+/* the footer section */
 
+
+
+/* ================= Footer ================= */
 .footer-container {
 background: #111827; /* gray-900 */
 color: #fff;
@@ -2817,35 +2933,15 @@ font-weight: 500;
 line-height: 26px;
 gap: 0.5rem;
 }
-@media (min-width: 768px) {
-.footer-top {
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-}
-.footer-contact {
-flex-direction: row;
-text-align: left;
-gap: 3rem;
-}
-}
-
 .footer-divider {
 border-top: 1px solid #374151; /* gray-700 */
 margin: 2rem 0;
 }
-
 .footer-grid {
 display: grid;
 grid-template-columns: 1fr;
 gap: 2rem;
 }
-@media (min-width: 768px) {
-.footer-grid {
-grid-template-columns: repeat(3, 1fr);
-}
-}
-
 .footer-col h4 {
 font-weight: 600;
 font-size: 16px;
@@ -2901,13 +2997,6 @@ line-height: 26px;
 color: #838383;
 gap: 1rem;
 }
-@media (min-width: 768px) {
-.footer-bottom {
-flex-direction: row;
-justify-content: space-between;
-}
-}
-
 .footer-policies {
 display: flex;
 gap: 1.5rem;
@@ -2919,5 +3008,27 @@ text-decoration: none;
 .footer-policies a:hover {
 text-decoration: underline;
 }
-
-
+/* media Query for responsiveness for footer  */
+@media (min-width: 768px) {
+.footer-top {
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+}
+.footer-contact {
+flex-direction: row;
+text-align: left;
+gap: 3rem;
+}
+}
+@media (min-width: 768px) {
+.footer-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (min-width: 768px) {
+.footer-bottom {
+flex-direction: row;
+justify-content: space-between;
+}
+}
