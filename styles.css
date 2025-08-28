@@ -2152,94 +2152,97 @@ overflow-x: visible;
 
 /* ---------------- Testimonial Section ---------------- */
 /* ---------- Testimonial Section ---------- */
-.ts-testimonial-section {
-  max-width: 1440px;
-  width: 100%;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F6F6F6;
+.ts-container {
+max-width: 1440px;
+margin: 0 auto;
+padding: 0 1rem;
 }
+
+
+.ts-testimonial-section {
+padding: 2rem 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 .ts-testimonial-section h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #0D0D0D;
-  margin-bottom: 1.5rem;
+font-size: 30px;
+font-weight: bold;
+color: #0D0D0D;
+margin-bottom: 1.5rem;
 }
+
 
 .ts-testimonial-cards {
-  max-width: 1240px;
-  width: 100%;
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
+display: flex;
+gap: 1rem;
+overflow-x: auto;
+padding-bottom: 1rem;
 }
+
 
 .ts-testimonial-cards::-webkit-scrollbar {
-  display: none;
+display: none;
 }
+
 
 .ts-testimonial-card {
-  flex: 1;
-  width: 400px;
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 1rem;
-  height: 355px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+flex-shrink: 0;
+width: 400px;
+background: #fff;
+border-radius: 20px;
+overflow: hidden;
+padding: 1rem;
+height: 355px;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 
 .ts-video-wrapper {
-  width: 100%;
-  height: 300px;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
+width: 100%;
+height: 300px;
+border-radius: 20px;
+overflow: hidden;
 }
+
 
 .ts-video-wrapper iframe {
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 }
+
 
 .ts-testimonial-card .ts-name {
-  margin-top: 0.75rem;
-  font-size: 16px;
-  font-weight: bold;
-  color: #3D3D3D;
+margin-top: 0.75rem;
+font-size: 16px;
+font-weight: bold;
+color: #3D3D3D;
 }
+
 
 .ts-testimonial-card .ts-profession {
-  font-size: 12px;
-  font-weight: 600;
-  color: #747474;
-}
-/* Responsive */
-/* ✅ Enable horizontal scroll for mobile & tablet */
-@media (max-width: 1024px) {
-  .cards-container {
-    flex-wrap: nowrap;          /* disable wrapping */
-    overflow-x: auto;           /* allow horizontal scroll */
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-  }
-
-
-  .testimonial-card {
-    flex: 0 0 80%;              /* card takes ~80% width */
-    max-width: 320px;
-    scroll-snap-align: start;
-  }
+font-size: 12px;
+font-weight: 600;
+color: #747474;
 }
 
+
+@media(min-width: 1024px){
+.ts-testimonial-cards {
+overflow-x: visible;
+display: flex;
+justify-content: space-between;
+}
+.ts-testimonial-card {
+flex: 1;
+max-width: 400px;
+}
+}
 
 /* the cab section  */
 /* ------------------ Cab Section ------------------ */
