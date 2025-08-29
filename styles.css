@@ -661,88 +661,6 @@ width: 690px;
     padding: 4px;
   }
 }
-
-/* Review Section */
-/* Review Section */
-.review-section {
-margin: 20px auto 40px auto;
-padding: 0 24px;
-display: flex;
-justify-content: center;
-}
-
-.review-container {
-max-width: 1240px;
-display: flex;
-gap: 20px;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-.review-card {
-flex: 1;
-max-width: 400px;
-min-width: 280px;
-height: 196px;
-border: 1px solid #d4dee5;
-border-radius: 16px;
-background: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 16px;
-text-align: center;
-transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.review-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.review-card h3 {
-font-family: sans-serif;
-font-size: 22px;
-font-weight: bold;
-margin: 8px 0 4px;
-}
-
-.review-card p {
-font-size: 14px;
-color: #6b7280;
-line-height: 20px;
-}
-
-.avatars {
-display: flex;
-margin-bottom: 12px;
-justify-content: center;
-}
-
-.avatars img {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-border: 2px solid white;
-margin-left: -8px;
-}
-
-.avatars img:first-child {
-margin-left: 0;
-}
-
-.stars {
-display: flex;
-margin-bottom: 12px;
-justify-content: center;
-}
-
-.stars svg {
-width: 24px;
-height: 24px;
-}
-
 /* Responsive Design */
 @media (min-width: 768px) {
 .header-container {
@@ -849,16 +767,6 @@ height: 38px;
 width: 18px;
 height: 18px;
 }
-
-.review-container {
-flex-direction: column;
-align-items: center;
-}
-
-.review-card {
-max-width: 100%;
-margin-bottom: 20px;
-}
 }
 
 @media (max-width: 480px) {
@@ -910,72 +818,80 @@ gap: 4px;
 
 
 /* Review Section */
-.review-section {
-margin-top: 32px;
-display: flex;
-justify-content: center;
-}
+
+/* the review section  */
 .review-container {
-max-width: 1240px;
-display: flex;
-gap: 20px;
-justify-content: space-between;
-flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 2rem;   /* ⬅ added space from the top */
 }
+
+
 .review-card {
-flex: 1;
-max-width: 400px;
-min-width: 280px;
-height: 196px;
-border: 1px solid #D4DEE5;
-border-radius: 16px;
-background: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 16px;
-text-align: center;
+  border: 1px solid #D4DEE5;
+  border-radius: 16px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;               /* content aligns left */
+  padding: 16px;
+  text-align: left;                      /* text left aligned */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
 .review-card h3 {
-font-family: sans-serif;
-font-size: 22px;
-font-weight: bold;
-margin: 8px 0 4px;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 8px 0 4px;
 }
+
 .review-card p {
-font-size: 14px;
-color: #6b7280;
-line-height: 20px;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 20px;
 }
+
+/* avatars */
 .avatars {
-display: flex;
-margin-bottom: 12px;
+  display: flex;
+  margin-bottom: 12px;
 }
 .avatars img {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-border: 2px solid white;
-margin-left: -8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
 }
 .avatars img:first-child {
-margin-left: 0;
+  margin-left: 0;
 }
+
+/* stars */
 .stars {
-display: flex;
-margin-bottom: 12px;
+  display: flex;
+  margin-bottom: 12px;
 }
 .stars svg {
-width: 24px;
-height: 24px;
-fill: #facc15;
+  width: 24px;
+  height: 24px;
+  fill: #facc15;
 }
 .stars .half-star {
-fill: url(#half-grad);
-stroke: #facc15;
-stroke-width: 1;
+  fill: url(#half-grad);
+  stroke: #facc15;
+  stroke-width: 1;
 }
+
 /* the exclusive benefits + independence day  */
 /* Exclusive Benefits Section */
 
@@ -1342,8 +1258,10 @@ color: #4b5563;
 }
 
 .location-highlight {
-font-weight: 600;
+  font-weight: 700; /* makes it bold */
+  color: black;
 }
+
 
 .package-features {
 display: grid;
@@ -2066,7 +1984,7 @@ overflow-x: visible;
   margin: 0 auto;
   padding: 0 1rem;
   background-color: #faf3e3;
-  padding: 4rem 1.5rem;
+padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2153,13 +2071,20 @@ overflow-x: visible;
   width: 100%;
   padding: 0.75rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+
+  display: flex;              /* center content horizontally */
+  justify-content: center;    /* center text */
+  text-align: center;         /* multi-line center alignment */
 }
 
 .ae-card-overlay p {
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;   /* increased from 14px */
+  font-weight: 600;  /* make it bolder */
+  line-height: 1.4;  /* improve readability */
+  max-width: 90%;    /* avoid text stretching edge-to-edge */
 }
+
 
 /* Added responsive media queries for better horizontal scrolling */
 @media (max-width: 480px) {
@@ -2208,7 +2133,6 @@ overflow-x: visible;
     min-width: 0;
   }
 }
-
 
 /* ---------------- Testimonial Section ---------------- */
 /* ---------- Testimonial Section ---------- */
@@ -2555,19 +2479,20 @@ margin-bottom: 24px;
 }
 
 .about-btn {
-background: #FF6B00;
-color: white;
-font-size: 16px;
-padding: 12px 24px;
-border: none;
-border-radius: 999px;
-cursor: pointer;
-display: inline-flex;
-align-items: center;
-gap: 8px;
-transition: background 0.3s ease;
+  background: #FF6B00;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;     /* keeps it only as wide as content */
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+  width: auto;              /* ensures button doesn’t stretch */
+  max-width: fit-content;   /* keeps it snug to text+icon */
 }
-
 .about-btn:hover {
 background: #e65c00;
 }
@@ -2616,7 +2541,6 @@ margin-top: 40px; /* ✅ push text block slightly down */
 max-width: 1440px; /* same as cab section */
 margin: 48px auto 64px auto;
 padding: 3rem 1.5rem; /* equal spacing inside */
-background: #F9FAFB; /* optional background like cab section */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -2677,8 +2601,7 @@ color: #747474;
 
 .card-meta .tag {
 padding: 2px 8px;
-background: #1E3A8A;
-color: white;
+background: #E0F2FE;
 font-size: 12px;
 border-radius: 8px;
 font-weight: 500;
@@ -2722,6 +2645,7 @@ color: #3D3D3D;
     scroll-snap-align: start;       /* snap each card neatly */
   }
 }
+
 
 /* Form Section Container */
 .form-section {
@@ -3003,7 +2927,7 @@ margin: 2rem 0;
 .footer-grid {
 display: grid;
 grid-template-columns: 1fr;
-gap: 2rem;
+gap: 3 rem;
 }
 .footer-col h4 {
 font-weight: 600;
@@ -3086,8 +3010,9 @@ gap: 3rem;
 }
 @media (min-width: 768px) {
 .footer-grid {
-grid-template-columns: repeat(3, 1fr);
-}
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* re-apply spacing between columns */
+  }
 }
 @media (min-width: 768px) {
 .footer-bottom {
