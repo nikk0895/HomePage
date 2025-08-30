@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +9,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   color: #111827;
+}
+/* Remove horizontal scrollbar and fix layout */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Header Styles */
@@ -386,282 +395,186 @@ body {
 }
 
 /* Banner Section */
-.banner-section {
- max-width: 1240px;
-  margin: 0 auto;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  background: linear-gradient(267.52deg, #0ea5e9 0%, #1e3a8a 99.57%);
-  color: white;
-  padding: 40px;
+.headbanner-section {
   position: relative;
-  min-height: 263px;
-  transform: translateY(-40%); /* moves it up by half of its own height */
-   margin-bottom: -50%;
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 10;
+  background: linear-gradient(267.52deg, #0EA5E9 0%, #1E3A8A 99.57%);
+  padding: 2rem 1.5rem;
+  margin-top: -150px; /* adjust as per overlap */
   position: relative;
   z-index: 10;
 }
+@media (min-width: 1024px) {
+  .headbanner-section {
+    flex-direction: row;
+    height: 263px;
+    padding: 0;
+  }
+}
 
-/* Left Text Section */
-.banner-text {
-  flex: 1;
-  max-width: 100%;           /* Give text more width */
+.headbanner-left {
   display: flex;
-  flex-direction: column;   /* Stack title, subtitle, search bar */
-  justify-content: center;  /* Vertically center */
-  gap: 16px;                /* Space between elements */
-  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
 }
-
-.banner-text h1 {
-  font-size: 38px;
+@media (min-width: 1024px) {
+  .headbanner-left {
+    padding: 0 40px;
+    height: 100%;
+  }
+}
+.headbanner-title {
+  font-family: Sans-serif;
   font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
+  font-size: 28px;
+  line-height: 110%;
+  max-width: 562px;
+  margin-bottom: 1rem;
 }
-
-.banner-text p {
-  font-size: 16px;
-  line-height: 28px;
-  margin: 0;
-  opacity: 0.9;
+@media (min-width: 1024px) {
+  .headbanner-title {
+    font-size: 38px;
+    line-height: 100%;
+    margin-bottom: 16px;
+  }
 }
-
-/* Search Bar */
-.search-bar {
+.headbanner-desc {
+  font-family: Sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  max-width: 562px;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .headbanner-desc {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+}
+.headbanner-search {
   display: flex;
   align-items: center;
-  background: white;
-  border-radius: 999px;
-  height: 60px;
-  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 22px 0px rgba(0,0,0,0.15);
   overflow: hidden;
-  max-width: 689px;
 }
-
-.search-bar input {
+@media (min-width: 1024px) {
+  .headbanner-search {
+    height: 60px;
+  }
+}
+.headbanner-search-input {
   flex-grow: 1;
-  border: none;
-  padding: 0 20px;
-  font-size: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
   color: #898989;
+  border: none;
   outline: none;
+  background: transparent;
 }
-
-.search-bar input::placeholder {
-  color: #898989;
+@media (min-width: 1024px) {
+  .headbanner-search-input {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-
-.search-bar button {
-  width: 44px;
-  height: 44px;
+.headbanner-search-btn {
+  width: 38px;
+  height: 38px;
   background: #f97316;
-  border: none;
-  border-radius: 50%;
-  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 9999px;
+  margin-right: 6px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
-
-.search-bar button:hover {
-  background: #ea580c;
-}
-
-.search-bar svg {
-  width: 20px;
-  height: 20px;
-  stroke: white;
-  fill: none;
-}
-
-/* Right Image Section */
-.banner-image {
-    flex-shrink: 0;
-  width: 549px;
-  height: 263px;
-  position: relative;
-  display: none;
-  overflow: hidden;
-}
-
-.banner-image img {
-width: 690px;
-  height: 460px;
-  object-fit: cover;
-  clip-path: ellipse(95% 100% at 100% 22%);
-  position: absolute;
-  top: -50px;
-  right: -150px; /* moved image further right to cover more blue space */
-  border-radius: 0;
-  display: block;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-  .header-container {
-    padding: 0 49px;
-  }
-
-  .mobile-menu-btn {
-    display: none;
-  }
-
-  .logo-container {
-    width: 198px;
-    height: 63px;
-  }
-
-  .desktop-nav {
-    display: flex;
-  }
-
-  .desktop-action {
-    display: flex;
-  }
-
-  .mobile-action {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none !important;
-  }
-
-  .banner-image {
-    display: block;
-  }
-}
-
 @media (min-width: 1024px) {
-  .icon-banner-section {
-    padding: 24px 100px;
+  .headbanner-search-btn {
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
   }
-
-  .icon-list {
-    gap: 44px;
+}
+.headbanner-search-icon {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .headbanner-search-icon {
+    width: 20px;
+    height: 20px;
   }
-
-  .tripadvisor-text {
+}
+.headbanner-right {
+  position: relative;
+  width: 100%;
+  max-width: 549px;
+  height: auto;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .headbanner-right {
     display: block;
+    height: 548px;
+    top: -24px;
+    overflow: hidden;
   }
-
-  .desktop-nav {
-    gap: 32px;
-  }
-
-  .banner-section {
-    flex-direction: row;
-    height: 263px;
-    padding: 40px;
-    margin-top: -30px;
-    margin-bottom: 30px;
-  }
-
-  .banner-text {
-    max-width: 690px;
-  }
-
-  .search-bar {
-    max-width: 689px;
-  }
-
-  .banner-image {
+}
+.headbanner-img {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .headbanner-img {
     display: block;
+    width: 690.28px;
+    height: 460.19px;
+    position: absolute;
+    top: 92.56px;
+    left: 0;
+    object-fit: cover;
+    border-radius: 0.5rem;
+   clip-path: ellipse(60% 70% at 70% 30%);
   }
 }
 
-@media (max-width: 768px) {
-  .banner-section {
-    flex-direction: column;
-    height: auto;
-    padding: 24px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  .banner-text {
-    max-width: 100%;
-  }
-
-  .banner-text h1 {
-    font-size: 28px;
-  }
-
-  .search-bar {
-    max-width: 100%;
-    height: 50px;
-  }
-
-  .search-bar button {
-    width: 38px;
-    height: 38px;
-  }
-
-  .search-bar svg {
-    width: 18px;
-    height: 18px;
-  }
-    .banner-image {
-      width: 100%;
-      height: 200px;
-      margin-top: 16px;
-    }
-  }
-  @media (max-width: 480px) {
-    .header-container {
-      padding: 0 16px;
-    }
-
-  .logo-container {
-    width: 120px;
-    height: 32px;
-  }
-
-  .header-actions {
-    gap: 8px;
-  }
-
-  .mobile-action {
-    padding: 6px;
-  }
-
-  .icon-banner-section {
-    padding: 16px;
-  }
-
-  .icon-container {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .tripadvisor {
-    align-self: center;
-  }
+/* Hide horizontal scrollbar for icon scroll */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-
-@media (max-width: 360px) {
-  .header-container {
-    padding: 0 12px;
-  }
-
-  .logo-container {
-    width: 100px;
-    height: 28px;
-  }
-
-  .header-actions {
-    gap: 4px;
-  }
-  .mobile-action {
-    padding: 4px;
-  }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -769,6 +682,7 @@ height: 38px;
 width: 18px;
 height: 18px;
 }
+
 }
 
 @media (max-width: 480px) {
@@ -788,6 +702,7 @@ gap: 8px;
 .mobile-action {
 padding: 6px;
 }
+
 
 .icon-banner-section {
 padding: 16px;
@@ -818,12 +733,7 @@ gap: 4px;
 }
 }
 
-
-/* Review Section */
-.review-section {
-  position: relative;
-  transform: translateY(-80px); /* overlap consistently */
-}
+/* ************************************************************************************ */
 /* the review section  */
 .review-container {
   max-width: 1240px;
@@ -831,9 +741,8 @@ gap: 4px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  /* padding-top: 2rem;   ⬅ added space from the top */
+  padding-top: 2rem; 
 }
-
 
 .review-card {
   border: 1px solid #D4DEE5;
@@ -896,6 +805,31 @@ gap: 4px;
   stroke: #facc15;
   stroke-width: 1;
 }
+/* Tablet & Mobile Scrollable */
+/* Tablet & Mobile Scrollable */
+@media (max-width: 1024px) {
+  .review-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .review-card {
+    flex: 0 0 80%;       /* each card takes ~80% width */
+    scroll-snap-align: start;
+  }
+}
+
+/* Mobile smaller widths */
+@media (max-width: 600px) {
+  .review-card {
+    flex: 0 0 90%;       /* take more space on tiny screens */
+  }
+}
 
 /* the exclusive benefits + independence day  */
 /* Exclusive Benefits Section */
@@ -907,7 +841,6 @@ margin: 2rem auto;
 padding: 2rem 1rem;
 background: #f6f6f6;
 text-align: center;
- margin-top: -2rem;
 }
 .benefits-section h2 {
 font-family: sans-serif;
@@ -970,6 +903,36 @@ clip-path: ellipse(100% 50% at 50% 50%);
 .benefit-circle img {
 width: 150px;
 height: auto;
+}
+/* Tablet & Mobile - Horizontal scroll */
+@media (max-width: 1024px) {
+  .benefits-wrapper {
+    display: flex;
+    flex-wrap: nowrap;              /* ❌ disable wrap, force row */
+    gap: 16px;
+    overflow-x: auto;               /* ✅ scroll enabled */
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;  /* smooth snapping */
+    padding: 0 24px;                /* side padding */
+    box-sizing: border-box;
+  }
+
+  .benefit-card {
+    flex: 0 0 80%;                  /* card takes ~80% of screen */
+    scroll-snap-align: start;       /* snap per card */
+  }
+}
+
+/* Small Mobile (≤600px) */
+@media (max-width: 600px) {
+  .benefits-wrapper {
+    padding: 0 16px;                /* smaller padding on phones */
+    gap: 12px;
+  }
+
+  .benefit-card {
+    flex: 0 0 90%;                  /* card takes ~90% width */
+  }
 }
 
 /* Gradient Variants */
@@ -1133,7 +1096,7 @@ display: none;
 scrollbar-width: none; /* Firefox */
 }
 
-/* Section Container */
+
 
 /* package section */
 .packages-section {
@@ -1325,44 +1288,35 @@ background-color: #dbeafe;
 border-radius: 4px;
 }
 
-/* Enhanced responsive design for better mobile layout */
-@media (max-width: 768px) {
-.packages-section {
-padding: 20px 8px;
-}
+/* ==================== Scroll for Mobile & Tablet ==================== */
+@media (max-width: 1024px) {
+  .packages-container {
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
 
-.packages-header {
-padding: 0 8px;
-}
+  .packages-grid {
+    display: flex;              /* Switch to flex for scrolling */
+    flex-wrap: nowrap;          /* Prevent wrapping */
+    gap: 16px;
+    min-width: max-content;     /* Ensure scroll works */
+  }
 
-.packages-container {
-padding: 0 8px;
-}
+  .package-card {
+    flex: 0 0 80%;              /* Take ~80% width of screen */
+    min-width: 280px;           /* Prevent shrinking too much */
+    max-width: 320px;           /* Keep consistent card size */
+  }
 
-.packages-title {
-font-size: 24px;
+  /* Optional: Hide scroll bar but keep scroll functionality */
+  .packages-container::-webkit-scrollbar {
+    display: none;
+  }
+  .packages-container {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
 }
-
-.packages-grid {
-grid-template-columns: 1fr;
-gap: 16px;
-}
-}
-
-/* Added medium screen responsive layout */
-@media (min-width: 769px) and (max-width: 1024px) {
-.packages-grid {
-grid-template-columns: repeat(2, 1fr);
-}
-}
-
-/* Added large screen layout for 4 columns */
-@media (min-width: 1025px) {
-.packages-grid {
-grid-template-columns: repeat(4, 1fr);
-}
-}
-
 
        
 /* the water - scuba - hotel section  */
@@ -1510,6 +1464,37 @@ font-size: 20px;
 font-weight: bold;
 color: black
 }
+/* ==================== Scroll Layout for Mobile & Tablet ==================== */
+@media (max-width: 1024px) {
+  .cards-wrapper {
+    display: flex;              /* Switch to flex for scrolling */
+    flex-wrap: nowrap;          /* Prevent wrapping */
+    gap: 16px;                  /* Keep spacing between cards */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;  /* optional: smooth snapping */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hotel-card,
+  .water-card,
+  .scuba-card {
+    flex: 0 0 80%;              /* Each card ~80% of viewport width */
+    min-width: 280px;           /* Prevent shrinking too small */
+    max-width: 320px;           /* Keep size consistent */
+    scroll-snap-align: start;   /* optional: snap effect */
+  }
+
+  /* Hide scrollbar (works across browsers) */
+  .cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .cards-wrapper {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+}
+
+
 /* General Section Styling */
 
 /* ---------- 50-50 Plan Section ---------- */
@@ -1988,12 +1973,14 @@ overflow-x: visible;
 
 /* top experience section  */
 /* ---------------- Andaman Experiences ---------------- */
+/* ---------- Responsive replacement for cards wrapper & cards ---------- */
+/* Category wrapper */
+/* ---------------- Andaman Experiences ---------------- */
 .ae-top-experiences {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem 1.5rem;
   background-color: #faf3e3;
-padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2016,10 +2003,6 @@ padding: 1rem 1.5rem;
   margin-top: 1rem;
 }
 
-.ae-experience-category {
-  margin-bottom: 3rem;
-}
-
 .ae-category-header {
   display: flex;
   justify-content: space-between;
@@ -2039,95 +2022,94 @@ padding: 1rem 1.5rem;
   color: #f97316;
   text-decoration: none;
 }
+.ae-category-header a:hover { text-decoration: underline; }
 
-.ae-category-header a:hover {
-  text-decoration: underline;
-}
-
+/* Cards wrapper */
 .ae-cards-wrapper {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
-  /* Enhanced horizontal scrolling for mobile devices */
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
   scrollbar-width: none;
 }
+.ae-cards-wrapper::-webkit-scrollbar { display: none; }
 
-.ae-cards-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
+/* Card wrapper */
 .ae-experience-card {
   position: relative;
-  flex-shrink: 0;
-  min-width: 295px;
+  flex: 0 0 auto;
+  width: 400px;
+  height: 258px;
   border-radius: 15px;
   overflow: hidden;
-  scroll-snap-align: start;
+  background: #ddd;
+  scroll-snap-align: center;
 }
 
+/* Image fix - responsive */
 .ae-experience-card img {
-  width: 100%;
-  height: 224px;
-  object-fit: cover;
+  width: 100%;          /* take full card width */
+  height: 100%;         /* take full card height */
+  object-fit: cover;    /* crop instead of stretch */
+  object-position: center;
+  display: block;
 }
-
+/* Overlay */
 .ae-card-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 0.75rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-
-  display: flex;              /* center content horizontally */
-  justify-content: center;    /* center text */
-  text-align: center;         /* multi-line center alignment */
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
 .ae-card-overlay p {
   color: #fff;
-  font-size: 18px;   /* increased from 14px */
-  font-weight: 600;  /* make it bolder */
-  line-height: 1.4;  /* improve readability */
-  max-width: 90%;    /* avoid text stretching edge-to-edge */
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 90%;
 }
 
-
-/* Added responsive media queries for better horizontal scrolling */
+/* ---------- Responsive Layout ---------- */
+/* Mobile: 1 card per view */
 @media (max-width: 480px) {
-  .ae-experience-card {
-    min-width: 280px;
-  }
-
   .ae-cards-wrapper {
-    gap: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+  .ae-experience-card {
+    flex: 0 0 100%;
+    width: 100%;      /* full width */
+    height: 220px;    /* scaled height */
   }
 }
 
+/* Tablet: 2 cards per view */
 @media (min-width: 481px) and (max-width: 768px) {
+  .ae-cards-wrapper { gap: 1rem; }
   .ae-experience-card {
-    min-width: 320px;
-  }
-
-  .ae-cards-wrapper {
-    gap: 1.25rem;
+    flex: 0 0 45%;
+    width: 45%;
+    height: 240px;
   }
 }
 
+/* Large Tablet: 3 cards per view */
 @media (min-width: 769px) and (max-width: 1023px) {
+  .ae-cards-wrapper { gap: 1.25rem; }
   .ae-experience-card {
-    min-width: 350px;
-  }
-
-  .ae-cards-wrapper {
-    gap: 1.5rem;
+    flex: 0 0 30%;
+    width: 30%;
+    height: 258px;
   }
 }
 
+/* Desktop: grid layout */
 @media (min-width: 1024px) {
   .ae-cards-wrapper {
     display: grid;
@@ -2135,107 +2117,145 @@ padding: 1rem 1.5rem;
     gap: 1.5rem;
     overflow-x: visible;
     scroll-snap-type: none;
-    /* Reset webkit scrolling for desktop grid layout */
     -webkit-overflow-scrolling: auto;
   }
   .ae-experience-card {
-    min-width: 0;
+    width: 100%;
+    height: 258px;
+  }
+}
+/* ---------------- Testimonial Section ---------------- */
+/* ---------- Testimonial Section ---------- */
+/* ---------- Base Styles ---------- */
+/* ---------- Testimonial Section ---------- */
+/* ---------- Testimonial Section ---------- */
+/* ---------- Testimonial Section ---------- */
+.ts-testimonial-section {
+  width: 100%;
+  max-width: 1440px;       /* outer section width */
+  height: 489.5px;         /* fixed height from Figma */
+  margin: 0 auto 3rem auto; /* center + margin bottom */
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* ---------- Container ---------- */
+.ts-container {
+  width: 1240px;           /* fixed inner container width */
+  max-width: 100%;         /* responsive fallback */
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Section Heading */
+.ts-testimonial-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ---------- Testimonial Cards ---------- */
+.ts-testimonial-cards {
+  display: flex;
+  justify-content: center;   /* center align cards */
+  gap: 2rem;                 /* spacing between cards */
+  flex-wrap: nowrap;         /* keep in one row */
+  overflow-x: auto;          /* enable horizontal scroll */
+  padding: 0 0 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.ts-testimonial-card {
+  flex: 0 0 auto;            /* prevent shrink */
+  width: 400px;              /* fixed width */
+  height: 355px;             /* fixed height */
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 1.5rem;      /* add bottom spacing */
+}
+
+/* Video wrapper inside card */
+.ts-video-wrapper {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.ts-video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Text */
+.ts-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.ts-profession {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Text */
+.ts-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.ts-profession {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* Mobile: 1 card full width */
+@media (max-width: 480px) {
+  .ts-testimonial-card {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
-/* ---------------- Testimonial Section ---------------- */
-/* ---------- Testimonial Section ---------- */
-.ts-container {
-max-width: 1440px;
-margin: 0 auto;
-padding: 0 1rem;
+/* Tablet: 2 cards per scroll */
+@media (min-width: 481px) and (max-width: 768px) {
+  .ts-testimonial-card {
+    width: 70%; /* show 2 at a time */
+  }
 }
 
+/* Desktop: grid layout (no scroll) */
+@media (min-width: 1024px) {
+  .ts-testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
 
-.ts-testimonial-section {
-padding: 2rem 1rem;
-display: flex;
-flex-direction: column;
-align-items: center;
+  .ts-testimonial-card {
+    width: 100%;
+  }
 }
 
-
-.ts-testimonial-section h2 {
-font-size: 30px;
-font-weight: bold;
-color: #0D0D0D;
-margin-bottom: 1.5rem;
-}
-
-
-.ts-testimonial-cards {
-display: flex;
-gap: 1rem;
-overflow-x: auto;
-padding-bottom: 1rem;
-}
-
-
-.ts-testimonial-cards::-webkit-scrollbar {
-display: none;
-}
-
-
-.ts-testimonial-card {
-flex-shrink: 0;
-width: 400px;
-background: #fff;
-border-radius: 20px;
-overflow: hidden;
-padding: 1rem;
-height: 355px;
-display: flex;
-flex-direction: column;
-align-items: center;
-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-
-.ts-video-wrapper {
-width: 100%;
-height: 300px;
-border-radius: 20px;
-overflow: hidden;
-}
-
-
-.ts-video-wrapper iframe {
-width: 100%;
-height: 100%;
-}
-
-
-.ts-testimonial-card .ts-name {
-margin-top: 0.75rem;
-font-size: 16px;
-font-weight: bold;
-color: #3D3D3D;
-}
-
-
-.ts-testimonial-card .ts-profession {
-font-size: 12px;
-font-weight: 600;
-color: #747474;
-}
-
-
-@media(min-width: 1024px){
-.ts-testimonial-cards {
-overflow-x: visible;
-display: flex;
-justify-content: space-between;
-}
-.ts-testimonial-card {
-flex: 1;
-max-width: 400px;
-}
-}
 
 /* the cab section  */
 /* ------------------ Cab Section ------------------ */
