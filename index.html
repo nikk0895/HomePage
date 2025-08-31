@@ -1,275 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Meta Tags -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Experience Andaman</title>
-  
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <div class="header-container">
-      <!-- Mobile hamburger and Logo -->
-      <div class="header-left">
-        <button id="mobile-menu-button" class="mobile-menu-btn">
-         <img src="assets/icons/menu.png" alt="Menu">
-        </button>
-        <!-- Logo -->
-        <div class="logo-container">
-          <img src="assets/icons/experience_logo.svg" alt="Experience Andamans" class="logo"/>
+<header class="header">
+  <div class="header-container">
+    <div class="header-left">
+      <button id="mobile-menu-button" class="mobile-menu-btn">
+        <img src="assets/icons/menu.png" alt="Menu" />
+      </button>
+      <div class="logo-container">
+        <img src="assets/icons/experience_logo.svg" alt="Experience Andamans" class="logo" />
+      </div>
+    </div>
+
+    <nav class="desktop-nav">
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Andaman Tourism <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Discover Andaman</a>
+          <a href="#" class="dropdown-item">Best Time to Visit</a>
+          <a href="#" class="dropdown-item">Culture & Food</a>
+          <a href="#" class="dropdown-item">Travel Guide</a>
         </div>
       </div>
 
-      <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Andaman Tourism <i class="fas fa-angle-down dropdown-arrow"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Discover Andaman</a>
-            <a href="#" class="dropdown-item">Best Time to Visit</a>
-            <a href="#" class="dropdown-item">Culture & Food</a>
-            <a href="#" class="dropdown-item">Travel Guide</a>
-          </div>
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Packages <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Family Packages</a>
+          <a href="#" class="dropdown-item">Honeymoon Packages</a>
+          <a href="#" class="dropdown-item">Adventure Packages</a>
         </div>
-        
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Packages <i class="fas fa-angle-down dropdown-arrow"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Family Packages</a>
-            <a href="#" class="dropdown-item">Honeymoon Packages</a>
-            <a href="#" class="dropdown-item">Adventure Packages</a>
-          </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Water Sports <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Scuba Diving</a>
+          <a href="#" class="dropdown-item">Snorkeling</a>
+          <a href="#" class="dropdown-item">Parasailing</a>
         </div>
-        
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Water Sports <i class="fas fa-angle-down dropdown-arrow"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Scuba Diving</a>
-            <a href="#" class="dropdown-item">Snorkeling</a>
-            <a href="#" class="dropdown-item">Parasailing</a>
-          </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Islands <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Havelock</a>
+          <a href="#" class="dropdown-item">Neil Island</a>
+          <a href="#" class="dropdown-item">Baratang</a>
         </div>
-        
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Islands <i class="fas fa-angle-down dropdown-arrow"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Havelock</a>
-            <a href="#" class="dropdown-item">Neil Island</a>
-            <a href="#" class="dropdown-item">Baratang</a>
-          </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Sightseeing <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">City Tours</a>
+          <a href="#" class="dropdown-item">Heritage Sites</a>
+          <a href="#" class="dropdown-item">Nature Trails</a>
         </div>
-        
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Sightseeing <i class="fas fa-angle-down dropdown-arrow"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">City Tours</a>
-            <a href="#" class="dropdown-item">Heritage Sites</a>
-            <a href="#" class="dropdown-item">Nature Trails</a>
-          </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Ferry <i class="fas fa-angle-down dropdown-arrow"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Ferry Schedules</a>
+          <a href="#" class="dropdown-item">Ticket Booking</a>
+          <a href="#" class="dropdown-item">Private Ferry</a>
         </div>
-        
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link">
-            Ferry <i class="fas fa-angle-down dropdown-arrow"></i>
+      </div>
+
+      <a href="/about" class="nav-link">About Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://www.youtube.com/channel/UC4XgnG-rhOY17W_efphprRw/feed" target="_blank" class="desktop-action youtube-btn">
+        <i class="fas fa-video"></i> EA Tours
+      </a>
+      <a href="/contact" class="desktop-action contact-btn">
+        Contact <span class="arrow">→</span>
+      </a>
+      <a href="/login" class="desktop-action user-btn">
+        <img src="assets/icons/login.png" alt="User" />
+      </a>
+
+      <a href="https://www.youtube.com/channel/UC4XgnG-rhOY17W_efphprRw/feed" target="_blank" class="mobile-action">
+        <img src="assets/icons/video.png" alt="Videos" />
+      </a>
+      <a href="/contact" class="mobile-action">
+        <img src="assets/icons/headset.png" alt="Contact Us" />
+      </a>
+      <a href="/login" class="mobile-action">
+        <img src="assets/icons/login.png" alt="User" />
+      </a>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <div class="mobile-menu-content">
+      <a href="#" class="mobile-menu-item">Andaman Tourism</a>
+      <a href="#" class="mobile-menu-item">Packages</a>
+      <a href="#" class="mobile-menu-item">Water Sports</a>
+      <a href="#" class="mobile-menu-item">Islands</a>
+      <a href="#" class="mobile-menu-item">Sightseeing</a>
+      <a href="#" class="mobile-menu-item">Ferry</a>
+      <a href="/about" class="mobile-menu-item">About Us</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <section class="icon-banner-section">
+    <div class="icon-container">
+
+      <nav class="icon-nav">
+        <div class="icon-list">
+          <a href="#" class="icon-item">
+            <img src="assets/icons/couple.svg" alt="Couple Tours" />
+            <span>Couple Tours</span>
           </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Ferry Schedules</a>
-            <a href="#" class="dropdown-item">Ticket Booking</a>
-            <a href="#" class="dropdown-item">Private Ferry</a>
-          </div>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/mountain.svg" alt="Adventure Tours" />
+            <span>Adventure Tours</span>
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/family.svg" alt="Family Tours" />
+            <span>Family Tours</span>
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/activities.svg" alt="Activities" />
+            <span>Activities</span>
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/boat.svg" alt="Cruise" />
+            <span>Cruise</span>
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/cab.svg" alt="Cab Booking" />
+            <span>Cab Booking</span>
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/icons/map.svg" alt="Plan My Trip" />
+            <span>Plan My Trip</span>
+          </a>
         </div>
-        
-        <a href="/about" class="nav-link">About Us</a>
       </nav>
 
-      <!-- Right Side Actions -->
-      <div class="header-actions">
-        <!-- Desktop actions -->
-        <a href="https://www.youtube.com/channel/UC4XgnG-rhOY17W_efphprRw/feed" target="_blank" class="desktop-action youtube-btn">
-          <i class="fas fa-video"></i>
-          EA Tours
-        </a>
-        <a href="/contact" class="desktop-action contact-btn">
-          Contact <span class="arrow">→</span>
-        </a>
-        <a href="/login" class="desktop-action user-btn">
-  <img src="assets/icons/login.png" alt="User">
-</a>
-        
-        <!-- Mobile actions -->
-        <a href="https://www.youtube.com/channel/UC4XgnG-rhOY17W_efphprRw/feed" target="_blank" class="mobile-action">
-         <img src="assets/icons/video.png" alt="videos">
-        </a>
-        <a href="/contact" class="mobile-action">
-<img src="assets/icons/headset.png" alt="Contact us">
-        </a>
-        <a href="/login" class="mobile-action">
-           <img src="assets/icons/login.png" alt="User">
-        </a>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="mobile-menu hidden">
-      <div class="mobile-menu-content">
-        <a href="#" class="mobile-menu-item">Andaman Tourism</a>
-        <a href="#" class="mobile-menu-item">Packages</a>
-        <a href="#" class="mobile-menu-item">Water Sports</a>
-        <a href="#" class="mobile-menu-item">Islands</a>
-        <a href="#" class="mobile-menu-item">Sightseeing</a>
-        <a href="#" class="mobile-menu-item">Ferry</a>
-        <a href="/about" class="mobile-menu-item">About Us</a>
-      </div>
-    </div>
-  </header>
-
- <!-- Main Content Wrapper -->
-  <main class="main-content">
-    <!-- Icon Navigation Section -->
-    <section class="icon-banner-section">
-      <div class="icon-container">
-        <!-- Icons Navigation -->
-        <nav class="icon-nav">
-          <div class="icon-list">
-            <a href="#" class="icon-item">
-              <img src="assets/icons/couple.svg" alt="Couple Tours">
-              <span>Couple Tours</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/mountain.svg" alt="Adventure Tours">
-              <span>Adventure Tours</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/family.svg" alt="Family Tours">
-              <span>Family Tours</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/activities.svg" alt="Activities">
-              <span>Activities</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/boat.svg" alt="Cruise">
-              <span>Cruise</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/cab.svg" alt="Cab Booking">
-              <span>Cab Booking</span>
-            </a>
-            <a href="#" class="icon-item">
-              <img src="assets/icons/map.svg" alt="Plan My Trip">
-              <span>Plan My Trip</span>
-            </a>
-          </div>
-        </nav>
-
-        <!-- TripAdvisor Badge -->
-        <div class="tripadvisor">
-          <div class="tripadvisor-logo">
-            <img src="assets/icons/Tripadvisor.svg" alt="TripAdvisor" />
-          </div>
-          <div class="tripadvisor-text">
-            <span>
-              Highest Rated <span class="highlight">4.5+</span>
-            </span>
-            <br/>
-            <span class="reviews">(1900+ Reviews)</span>
-          </div>
+      <div class="tripadvisor">
+        <div class="tripadvisor-logo">
+          <img src="assets/icons/Tripadvisor.svg" alt="TripAdvisor" />
+        </div>
+        <div class="tripadvisor-text">
+          <span>
+            Highest Rated <span class="highlight">4.5+</span>
+          </span>
+          <br />
+          <span class="reviews">(1900+ Reviews)</span>
         </div>
       </div>
-    </section>
 
-    <!-- Banner Section -->
-   <!-- Banner Section -->
-  <section class="headbanner-section">
-    <!-- Left Text Area -->
-    <div class="headbanner-left">
-      <h1 class="headbanner-title">
-        Explore the Magic of Andaman
-      </h1>
-      <p class="headbanner-desc">
-        Relax on sunlit beaches, dive into clear waters, and start your island escape.
-      </p>
-      <div class="headbanner-search">
-        <input type="text" placeholder="Search for trip or destination" class="headbanner-search-input">
-        <button class="headbanner-search-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="headbanner-search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <!-- Right Image Area -->
-    <div class="headbanner-right">
-      <img src="assets/images/head_banner.png" alt="Andaman Beach" class="headbanner-img">
     </div>
   </section>
-  </main>
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-<!-- ************************ Review Card Section ************************ -->
-<!-- ************************ Review Card Section ************************ -->
+   <section class="headbanner-section">
+
+  <div class="headbanner-left">
+    <h1 class="headbanner-title">
+      Explore the Magic of Andaman
+    </h1>
+    <p class="headbanner-desc">
+      Relax on sunlit beaches, dive into clear waters, and start your island escape.
+    </p>
+    <div class="headbanner-search">
+      <input 
+        type="text" 
+        placeholder="Search for trip or destination" 
+        class="headbanner-search-input" 
+      />
+      <button class="headbanner-search-btn">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          class="headbanner-search-icon" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="headbanner-right">
+    <img 
+      src="assets/images/head_banner.png" 
+      alt="Andaman Beach" 
+      class="headbanner-img" 
+    />
+  </div>
+
+</section>
+</main>
+ 
 <section class="review-section">
   <div class="review-container">
-    
-    <!-- Card 1 -->
+
     <div class="review-card">
       <div class="avatars">
-        <img src="assets/icons/review.svg" alt="">
-        <img src="assets/icons/review2.svg" alt="">
-        <img src="assets/icons/review3.svg" alt="">
-        <img src="assets/icons/review4.svg" alt="">
-        <img src="assets/icons/review5.svg" alt="">
+        <img src="assets/icons/review.svg" alt="review" />
+        <img src="assets/icons/review2.svg" alt="review" />
+        <img src="assets/icons/review3.svg" alt="review" />
+        <img src="assets/icons/review4.svg" alt="review" />
+        <img src="assets/icons/review5.svg" alt="review" />
       </div>
       <h3>14+ Years of Experience</h3>
       <p>A dream of two brothers born and brought up in Andaman Islands since 2011.</p>
     </div>
 
-    <!-- Card 2 -->
     <div class="review-card">
       <div class="avatars">
-        <img src="assets/icons/review6.svg" alt="">
-        <img src="assets/icons/review7.svg" alt="">
-        <img src="assets/icons/review8.svg" alt="">
+        <img src="assets/icons/review6.svg" alt="review" />
+        <img src="assets/icons/review7.svg" alt="review" />
+        <img src="assets/icons/review8.svg" alt="review" />
       </div>
       <h3>10,000+ Happy Travellers</h3>
       <p>Trusted by thousands for memorable experiences across the islands and beyond.</p>
     </div>
 
-    <!-- Card 3 -->
     <div class="review-card">
       <div class="stars">
-        <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
-              <defs>
-                <linearGradient id="half-grad" x1="0" x2="1" y1="0" y2="0">
-                  <stop offset="50%" stop-color="#facc15" />
-                  <stop offset="50%" stop-color="transparent" stop-opacity="1" />
-                </linearGradient>
-              </defs>
-              <path fill="url(#half-grad)" stroke="#facc15" stroke-width="1"
-                d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787
-                   1.4 8.168L12 18.896l-7.334 3.869
-                   1.4-8.168L.132 9.21l8.2-1.192z"/>
-            </svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z" />
+        </svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z" />
+        </svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z" />
+        </svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.869 1.4-8.168L.132 9.21l8.2-1.192z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
+          <defs>
+            <linearGradient id="half-grad" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="50%" stop-color="#facc15" />
+              <stop offset="50%" stop-color="transparent" stop-opacity="1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#half-grad)" stroke="#facc15" stroke-width="1"
+            d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787
+               1.4 8.168L12 18.896l-7.334 3.869
+               1.4-8.168L.132 9.21l8.2-1.192z"/>
+        </svg>
       </div>
       <h3>Rated by Real Travellers</h3>
       <p>Consistently reviewed for exceptional service by guests who experienced our tours firsthand.</p>
@@ -277,20 +283,19 @@
 
   </div>
 </section>
-<!-- the sale banner section + exclusive benefits --> 
- <!-- ***************************** Exclusive Benefits Section ****************** -->
-<!-- ***************************** Exclusive Benefits Section ****************** -->
+
 <section class="benefits-section">
   <h2>Exclusive Benefits</h2>
 
   <div class="benefits-wrapper">
+
     <div class="benefit-card blue">
       <div class="benefit-text">
         <p class="benefit-title">Up to 30% OFF on Packages</p>
         <p class="benefit-desc">Plan your trip now and grab limited-time discounts.</p>
       </div>
       <div class="benefit-circle">
-        <img src="assets/icons/exlusive.svg" alt="Offer">
+        <img src="assets/icons/exlusive.svg" alt="Offer" />
       </div>
     </div>
 
@@ -300,7 +305,7 @@
         <p class="benefit-desc">Flexible EMI options to make your vacation stress-free.</p>
       </div>
       <div class="benefit-circle">
-        <img src="assets/icons/exclusive1.svg" alt="EMI">
+        <img src="assets/icons/exclusive1.svg" alt="EMI" />
       </div>
     </div>
 
@@ -310,200 +315,191 @@
         <p class="benefit-desc">Experience Andaman with our expert-guided tours.</p>
       </div>
       <div class="benefit-circle">
-        <img src="assets/icons/exclusive3.svg" alt="Travel">
+        <img src="assets/icons/exclusive3.svg" alt="Travel" />
       </div>
     </div>
+
   </div>
 </section>
 
-
-<!-- **************************** Independence Day Sale Section *************** -->
 <aside class="sale-section">
   <div class="sale-banner">
 
-    <!-- Left Images -->
     <div class="sale-images">
-      <img src="assets/images/sale1.png" alt="Beach" class="img1">
-      <img src="assets/images/sale2.png" alt="Island" class="img2">
-      <img src="assets/images/sale3.png" alt="Lighthouse" class="img3">
+      <img src="assets/images/sale1.png" alt="Beach" class="img1" />
+      <img src="assets/images/sale2.png" alt="Island" class="img2" />
+      <img src="assets/images/sale3.png" alt="Lighthouse" class="img3" />
     </div>
 
-    <!-- Right Content -->
     <div class="sale-content">
       <h2>Independence Day Sale</h2>
       <h3>4 Night 5 Days Package at</h3>
       <p><span>₹18,000</span> Per Person - Stay / Sightseeing / Cruise / Activities</p>
       <button>Valid Till 10th Aug</button>
     </div>
+
   </div>
 </aside>
-<!-- the certificate section + Packages section -->
- <!-- *************************** Certification Section *******************************-->
+
 <section class="certification-section">
-  <!-- Certified by text -->
   <span class="certified-text">Certified by:</span>
-  
-  <!-- Logos -->
+
   <div class="certified-logos-wrapper">
     <div class="certified-logos">
-      <img src="assets/images/Certified by 1.png" alt="Incredible India" class="logo logo-1">
-      <img src="assets/icons/certified1.svg" alt="Andamans" class="logo logo-2">
-      <img src="assets/icons/certified2.svg" alt="IATO" class="logo logo-3">
-      <img src="assets/images/Certified by 4.png" alt="TAAI" class="logo logo-4">
+      <img src="assets/images/Certified by 1.png" alt="Incredible India" class="logo logo-1" />
+      <img src="assets/icons/certified1.svg" alt="Andamans" class="logo logo-2" />
+      <img src="assets/icons/certified2.svg" alt="IATO" class="logo logo-3" />
+      <img src="assets/images/Certified by 4.png" alt="TAAI" class="logo logo-4" />
     </div>
   </div>
 </section>
 
-<!-- ******************************* Packages Section *******************************-->
-<!-- ******************************* Packages Section *******************************-->
 <section class="packages-section">
-        <!-- Header -->
-        <div class="packages-header">
-            <h2 class="packages-title">Packages</h2>
-            <a href="#" class="view-all-link">View All →</a>
+
+  <div class="packages-header">
+    <h2 class="packages-title">Packages</h2>
+    <a href="#" class="view-all-link">View All →</a>
+  </div>
+
+  <div class="packages-container">
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <div class="package-image">
+          <img src="assets/images/Packages 1.png" alt="Andaman Delight" />
         </div>
-        <div class="packages-container">
-            <div class="packages-grid">
-                <!-- Package 1: Andaman Delight -->
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="assets/images/Packages 1.png" alt="Andaman Delight">
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3 class="package-title">Andaman Delight</h3>
-                            <span class="package-duration">4D/3N</span>
-                        </div>
-                        <div class="package-location">
-                            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">1N</span> Havelock</p>
-                        </div>
-                        <div class="package-features">
-                            <span class="feature-item">Pickup & Drop</span>
-                            <span class="feature-item">3 Star Hotels</span>
-                            <span class="feature-item">Breakfast</span>
-                            <span class="feature-item">Sightseeing</span>
-                            <span class="feature-item">Cruise Ride</span>
-                            <span class="feature-item">Water Activities</span>
-                        </div>
-                    </div>
-                    <div class="package-footer">
-                        <div class="price-section">
-                            <span class="current-price">₹30,031</span>
-                            <span class="old-price">₹37,181</span>
-                        </div>
-                        <span class="discount-badge">Save: 30%</span>
-                    </div>
-                </div>
-
-                <!-- Package 2: Island Hopping -->
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="assets/images/Packages 2.png" alt="Island Hopping">
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3 class="package-title">Island Hopping</h3>
-                            <span class="package-duration">5D/4N</span>
-                        </div>
-                        <div class="package-location">
-                            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">1N</span> Havelock • <span class="location-highlight">1N</span> Neil</p>
-                        </div>
-                        <div class="package-features">
-                            <span class="feature-item">Pickup & Drop</span>
-                            <span class="feature-item">3 Star Hotels</span>
-                            <span class="feature-item">Breakfast</span>
-                            <span class="feature-item">Sightseeing</span>
-                            <span class="feature-item">Cruise Ride</span>
-                            <span class="feature-item">Water Activities</span>
-                        </div>
-                    </div>
-                    <div class="package-footer">
-                        <div class="price-section">
-                            <span class="current-price">₹38,525</span>
-                            <span class="old-price">₹43,163</span>
-                        </div>
-                        <span class="discount-badge">Save: 30%</span>
-                    </div>
-                </div>
-
-                <!-- Package 3: Explore Havelock -->
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="assets/images/Packages 3.png" alt="Explore Havelock">
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3 class="package-title">Explore Havelock</h3>
-                            <span class="package-duration">5D/4N</span>
-                        </div>
-                        <div class="package-location">
-                            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">2N</span> Havelock</p>
-                        </div>
-                        <div class="package-features">
-                            <span class="feature-item">Pickup & Drop</span>
-                            <span class="feature-item">3 Star Hotels</span>
-                            <span class="feature-item">Breakfast</span>
-                            <span class="feature-item">Sightseeing</span>
-                            <span class="feature-item">Cruise Ride</span>
-                            <span class="feature-item">Water Activities</span>
-                        </div>
-                    </div>
-                    <div class="package-footer">
-                        <div class="price-section">
-                            <span class="current-price">₹34,862</span>
-                            <span class="old-price">₹43,163</span>
-                        </div>
-                        <span class="discount-badge">Save: 30%</span>
-                    </div>
-                </div>
-
-                <!-- Package 4: Baratang and Havelock -->
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="assets/images/Packages 4.png" alt="Baratang and Havelock">
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3 class="package-title">Baratang and Havelock</h3>
-                            <span class="package-duration">5D/4N</span>
-                        </div>
-                        <div class="package-location">
-                            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">2N</span> Havelock</p>
-                        </div>
-                        <div class="package-features">
-                            <span class="feature-item">Pickup & Drop</span>
-                            <span class="feature-item">3 Star Hotels</span>
-                            <span class="feature-item">Breakfast</span>
-                            <span class="feature-item">Sightseeing</span>
-                            <span class="feature-item">Cruise Ride</span>
-                            <span class="feature-item">Water Activities</span>
-                        </div>
-                    </div>
-                    <div class="package-footer">
-                        <div class="price-section">
-                            <span class="current-price">₹35,424</span>
-                            <span class="old-price">₹43,858</span>
-                        </div>
-                        <span class="discount-badge">Save: 30%</span>
-                    </div>
-                </div>
-            </div>
+        <div class="package-content">
+          <div class="package-header">
+            <h3 class="package-title">Andaman Delight</h3>
+            <span class="package-duration">4D/3N</span>
+          </div>
+          <div class="package-location">
+            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">1N</span> Havelock</p>
+          </div>
+          <div class="package-features">
+            <span class="feature-item">Pickup & Drop</span>
+            <span class="feature-item">3 Star Hotels</span>
+            <span class="feature-item">Breakfast</span>
+            <span class="feature-item">Sightseeing</span>
+            <span class="feature-item">Cruise Ride</span>
+            <span class="feature-item">Water Activities</span>
+          </div>
         </div>
+        <div class="package-footer">
+          <div class="price-section">
+            <span class="current-price">₹30,031</span>
+            <span class="old-price">₹37,181</span>
+          </div>
+          <span class="discount-badge">Save: 30%</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-image">
+          <img src="assets/images/Packages 2.png" alt="Island Hopping" />
+        </div>
+        <div class="package-content">
+          <div class="package-header">
+            <h3 class="package-title">Island Hopping</h3>
+            <span class="package-duration">5D/4N</span>
+          </div>
+          <div class="package-location">
+            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">1N</span> Havelock • <span class="location-highlight">1N</span> Neil</p>
+          </div>
+          <div class="package-features">
+            <span class="feature-item">Pickup & Drop</span>
+            <span class="feature-item">3 Star Hotels</span>
+            <span class="feature-item">Breakfast</span>
+            <span class="feature-item">Sightseeing</span>
+            <span class="feature-item">Cruise Ride</span>
+            <span class="feature-item">Water Activities</span>
+          </div>
+        </div>
+        <div class="package-footer">
+          <div class="price-section">
+            <span class="current-price">₹38,525</span>
+            <span class="old-price">₹43,163</span>
+          </div>
+          <span class="discount-badge">Save: 30%</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-image">
+          <img src="assets/images/Packages 3.png" alt="Explore Havelock" />
+        </div>
+        <div class="package-content">
+          <div class="package-header">
+            <h3 class="package-title">Explore Havelock</h3>
+            <span class="package-duration">5D/4N</span>
+          </div>
+          <div class="package-location">
+            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">2N</span> Havelock</p>
+          </div>
+          <div class="package-features">
+            <span class="feature-item">Pickup & Drop</span>
+            <span class="feature-item">3 Star Hotels</span>
+            <span class="feature-item">Breakfast</span>
+            <span class="feature-item">Sightseeing</span>
+            <span class="feature-item">Cruise Ride</span>
+            <span class="feature-item">Water Activities</span>
+          </div>
+        </div>
+        <div class="package-footer">
+          <div class="price-section">
+            <span class="current-price">₹34,862</span>
+            <span class="old-price">₹43,163</span>
+          </div>
+          <span class="discount-badge">Save: 30%</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-image">
+          <img src="assets/images/Packages 4.png" alt="Baratang and Havelock" />
+        </div>
+        <div class="package-content">
+          <div class="package-header">
+            <h3 class="package-title">Baratang and Havelock</h3>
+            <span class="package-duration">5D/4N</span>
+          </div>
+          <div class="package-location">
+            <p><span class="location-highlight">2N</span> Port Blair • <span class="location-highlight">2N</span> Havelock</p>
+          </div>
+          <div class="package-features">
+            <span class="feature-item">Pickup & Drop</span>
+            <span class="feature-item">3 Star Hotels</span>
+            <span class="feature-item">Breakfast</span>
+            <span class="feature-item">Sightseeing</span>
+            <span class="feature-item">Cruise Ride</span>
+            <span class="feature-item">Water Activities</span>
+          </div>
+        </div>
+        <div class="package-footer">
+          <div class="price-section">
+            <span class="current-price">₹35,424</span>
+            <span class="old-price">₹43,858</span>
+          </div>
+          <span class="discount-badge">Save: 30%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </section>
 
-  <!--******************************* Hotels Section *************************** -->
- <!--******************************* Hotels Section *************************** -->
 <section class="hotels-section">
-  <!-- Header -->
+
   <div class="section-header">
     <h2>Hotels</h2>
     <a href="#">View All →</a>
   </div>
 
-  <!-- Cards Wrapper -->
   <div class="cards-wrapper">
+
     <div class="hotel-card">
-      <img src="assets/images/Hotels 1.png" alt="Symphony Samudra Beach">
+      <img src="assets/images/Hotels 1.png" alt="Symphony Samudra Beach" />
       <div class="card-overlay">
         <h3>Symphony Samudra Beach...</h3>
         <div class="card-meta">
@@ -517,7 +513,7 @@
     </div>
 
     <div class="hotel-card">
-      <img src="assets/images/Hotels 2.png" alt="Comfort Inn Blue Waves">
+      <img src="assets/images/Hotels 2.png" alt="Comfort Inn Blue Waves" />
       <div class="card-overlay">
         <h3>Comfort Inn Blue Waves</h3>
         <div class="card-meta">
@@ -531,7 +527,7 @@
     </div>
 
     <div class="hotel-card">
-      <img src="assets/images/Hotels 3.png" alt="Silver Sand Sea Princess Beach">
+      <img src="assets/images/Hotels 3.png" alt="Silver Sand Sea Princess Beach" />
       <div class="card-overlay">
         <h3>Silver Sand Sea Princess Bea...</h3>
         <div class="card-meta">
@@ -545,7 +541,7 @@
     </div>
 
     <div class="hotel-card">
-      <img src="assets/images/Hotels 4.png" alt="Welcome Hotel and Resorts">
+      <img src="assets/images/Hotels 4.png" alt="Welcome Hotel and Resorts" />
       <div class="card-overlay">
         <h3>Welcome Hotel and Resorts...</h3>
         <div class="card-meta">
@@ -557,80 +553,73 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
-<!-- ********************************* Water Sports ***************************-->
+
 <section class="water-sports">
+
   <div class="section-header">
     <h2>Water Sports</h2>
     <a href="#">View All →</a>
   </div>
+
   <div class="cards-wrapper">
+
     <div class="water-card">
-      <img src="assets/images/Water Sports 1.jpg" alt="Scuba Diving">
+      <img src="assets/images/Water Sports 1.jpg" alt="Scuba Diving" />
       <div class="card-overlay">
         <h3>Scuba Diving</h3>
         <p>Starting at ₹3500</p>
       </div>
     </div>
+
     <div class="water-card">
-      <img src="assets/images/Water Sports 2.jpg" alt="Kayaking">
+      <img src="assets/images/Water Sports 2.jpg" alt="Kayaking" />
       <div class="card-overlay">
         <h3>Kayaking</h3>
         <p>Starting at ₹3500</p>
       </div>
     </div>
+
     <div class="water-card">
-      <img src="assets/images/Water Sports 3.png" alt="Sea Walk">
+      <img src="assets/images/Water Sports 3.png" alt="Sea Walk" />
       <div class="card-overlay">
         <h3>Sea Walk</h3>
         <p>Starting at ₹3500</p>
       </div>
     </div>
+
     <div class="water-card">
-      <img src="assets/images/Water Sports 4.png" alt="Snorkeling">
+      <img src="assets/images/Water Sports 4.png" alt="Snorkeling" />
       <div class="card-overlay">
         <h3>Snorkeling</h3>
         <p>Starting at ₹1100</p>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ************************* Scuba Diving *******************************-->
 <section class="scuba-section">
+
   <div class="section-header">
     <h2>Scuba Diving</h2>
     <a href="#">View All →</a>
   </div>
 
   <div class="cards-wrapper">
-    <!-- Card 1 -->
-    <div class="scuba-card">
-      <img src="assets/images/Scuba Diving 1.png" alt="Scuba Diving">
-      <div class="scuba-content">
-        <h3>Scuba Diving For Non Swimm...</h3>
-        <div class="stars-location">
-          <div class="stars">★★★★★</div>
-          <div class="location"><i class="fa-solid fa-location-dot"></i><span>Havelock</span></div>
-        </div>
-        <div class="features">
-          <span>• Scuba Diving</span>
-          <span>• Coordinator</span>
-          <span>• Personal Guide</span>
-        </div>
-      </div>
-      <div class="price-box">₹3500</div>
-    </div>
 
-    <!-- Repeat for other scuba cards (2, 3, 4) -->
-     <div class="scuba-card">
-      <img src="assets/images/Scuba Diving 2.png" alt="Scuba Diving">
+    <div class="scuba-card">
+      <img src="assets/images/Scuba Diving 1.png" alt="Scuba Diving" />
       <div class="scuba-content">
         <h3>Scuba Diving For Non Swimm...</h3>
         <div class="stars-location">
           <div class="stars">★★★★★</div>
-          <div class="location"><i class="fa-solid fa-location-dot"></i><span>Havelock</span></div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Havelock</span>
+          </div>
         </div>
         <div class="features">
           <span>• Scuba Diving</span>
@@ -642,12 +631,15 @@
     </div>
 
     <div class="scuba-card">
-      <img src="assets/images/Scuba Diving 3.png" alt="Scuba Diving">
+      <img src="assets/images/Scuba Diving 2.png" alt="Scuba Diving" />
       <div class="scuba-content">
         <h3>Scuba Diving For Non Swimm...</h3>
         <div class="stars-location">
           <div class="stars">★★★★★</div>
-          <div class="location"><i class="fa-solid fa-location-dot"></i><span>Havelock</span></div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Havelock</span>
+          </div>
         </div>
         <div class="features">
           <span>• Scuba Diving</span>
@@ -659,12 +651,35 @@
     </div>
 
     <div class="scuba-card">
-      <img src="assets/images/Scuba Diving 4.png" alt="Scuba Diving">
+      <img src="assets/images/Scuba Diving 3.png" alt="Scuba Diving" />
       <div class="scuba-content">
         <h3>Scuba Diving For Non Swimm...</h3>
         <div class="stars-location">
           <div class="stars">★★★★★</div>
-          <div class="location"><i class="fa-solid fa-location-dot"></i><span>Havelock</span></div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Havelock</span>
+          </div>
+        </div>
+        <div class="features">
+          <span>• Scuba Diving</span>
+          <span>• Coordinator</span>
+          <span>• Personal Guide</span>
+        </div>
+      </div>
+      <div class="price-box">₹3500</div>
+    </div>
+
+    <div class="scuba-card">
+      <img src="assets/images/Scuba Diving 4.png" alt="Scuba Diving" />
+      <div class="scuba-content">
+        <h3>Scuba Diving For Non Swimm...</h3>
+        <div class="stars-location">
+          <div class="stars">★★★★★</div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Havelock</span>
+          </div>
         </div>
         <div class="features">
           <span>• Scuba Diving</span>
@@ -678,44 +693,39 @@
   </div>
 </section>
 
-
-  <!-- *********************** 50-50 Plan Section ****************************-->
-<aside class="plan-section">
+ <aside class="plan-section">
   <div class="plan-container">
     <div class="plan-content">
 
-      <!-- Left Section -->
       <div class="plan-left">
         <div class="plan-title-wrap">
           <div class="plan-icon">
-            <img src="assets/icons/Vector.svg" alt="Plan Icon">
+            <img src="assets/icons/Vector.svg" alt="Plan Icon" />
           </div>
           <span class="plan-title">50/50 Plan</span>
         </div>
         <span class="plan-desc">Pay 50% Now and 50% After Reaching Andaman Islands</span>
       </div>
 
-      <!-- Right: CTA -->
       <a href="#" class="plan-cta">
         Book a Trip Now <span>→</span>
       </a>
+
     </div>
   </div>
 </aside>
 
-<!-- ***************************** About Experience Andaman ************************ -->
 <article class="about-section">
-  <!-- Video Preview -->
+
   <div class="video-preview">
-    <img src="https://img.youtube.com/vi/VeKw3OTPZ40/hqdefault.jpg" alt="Video Preview">
+    <img src="https://img.youtube.com/vi/VeKw3OTPZ40/hqdefault.jpg" alt="Video Preview" />
     <button id="playButton" class="play-btn">
       <div class="play-circle">
-        <img src="assets/icons/play.svg" alt="Play Icon">
+        <img src="assets/icons/play.svg" alt="Play Icon" />
       </div>
     </button>
   </div>
 
-  <!-- Text Content -->
   <div class="about-text">
     <h2>About Experience Andamans</h2>
 
@@ -737,19 +747,17 @@
 
     <a href="#" class="view-btn">View More <span>→</span></a>
   </div>
+
 </article>
 
- <!-- *************************** Explore More Section *******************************-->
-   <section class="explore-packages">
-  <!-- Header -->
+<section class="explore-packages">
   <div class="explore-header">
     <h2>Explore Packages by Travel Style</h2>
     <a href="#">View All →</a>
   </div>
 
-  <!-- Cards Wrapper -->
   <div class="explorecards-wrapper">
-    <!-- Card 1 -->
+
     <div class="explorepackage-card">
       <div class="explorecard-image">
         <img src="assets/images/Explore Packages  by Travel Style 1.jpg" alt="Andaman Delight">
@@ -781,11 +789,10 @@
       </div>
     </div>
 
-    <!-- Card 2 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 6.jpg" alt="Andaman Delight">
-        <span class="package-type honeymoon">Family</span>
+        <img src="assets/images/Explore Packages by Travel Style 6.jpg" alt="Neil Escapade">
+        <span class="package-type family">Family</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -806,18 +813,17 @@
       </div>
       <div class="explorecard-footer">
         <div class="price">
-           <span class="current">₹46996</span>
+          <span class="current">₹46996</span>
           <span class="original">₹58186</span>
         </div>
         <span class="discount">Save:30%</span>
       </div>
     </div>
 
-     <!-- Card 3-->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore packages by Travel Style 3.png" alt="Andaman Delight">
-        <span class="package-type honeymoon">Budget</span>
+        <img src="assets/images/Explore packages by Travel Style 3.png" alt="Emerald Andaman">
+        <span class="package-type budget">Budget</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -845,12 +851,10 @@
       </div>
     </div>
 
-       
-         <!-- Card 4 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 4.png" alt="Andaman Delight">
-        <span class="package-type honeymoon">Luxury</span>
+        <img src="assets/images/Explore Packages by Travel Style 4.png" alt="Havelock Neil Exotica">
+        <span class="package-type luxury">Luxury</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -878,11 +882,10 @@
       </div>
     </div>
 
-         <!-- Card 5 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 5.png" alt="Andaman Delight">
-        <span class="package-type honeymoon">Adventure</span>
+        <img src="assets/images/Explore Packages by Travel Style 5.png" alt="Offbeat Explorers Tour">
+        <span class="package-type adventure">Adventure</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -910,15 +913,14 @@
       </div>
     </div>
 
-     <!-- Card 6 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 6.jpg" alt="Andaman Delight">
-        <span class="package-type honeymoon">Family</span>
+        <img src="assets/images/Explore Packages by Travel Style 6.jpg" alt="Amazing Andaman">
+        <span class="package-type family">Family</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
-          <h3>Amazing Andaman </h3>
+          <h3>Amazing Andaman</h3>
           <span class="duration">7D/6N</span>
         </div>
         <p class="itinerary">
@@ -942,11 +944,9 @@
       </div>
     </div>
 
-
-    <!-- Card 7 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 7.jpg" alt="Andaman Delight">
+        <img src="assets/images/Explore Packages by Travel Style 7.jpg" alt="Honeymoon Delight">
         <span class="package-type honeymoon">Honeymoon</span>
       </div>
       <div class="explorecard-content">
@@ -975,11 +975,10 @@
       </div>
     </div>
 
-    <!-- Card 8 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Water Sports 1.jpg" alt="Andaman Delight">
-        <span class="package-type honeymoon">Budget</span>
+        <img src="assets/images/Water Sports 1.jpg" alt="Andaman Island Quest">
+        <span class="package-type budget">Budget</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -1007,15 +1006,14 @@
       </div>
     </div>
 
-     <!-- Card 9 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 9.png" alt="Andaman Delight">
-        <span class="package-type honeymoon">Luxury</span>
+        <img src="assets/images/Explore Packages by Travel Style 9.png" alt="Faraway Andaman">
+        <span class="package-type luxury">Luxury</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
-          <h3> Faraway Andaman</h3>
+          <h3>Faraway Andaman</h3>
           <span class="duration">7D/6N</span>
         </div>
         <p class="itinerary">
@@ -1039,11 +1037,10 @@
       </div>
     </div>
 
-     <!-- Card 10 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 11.jpg" alt="Andaman Delight">
-        <span class="package-type honeymoon">Adventure</span>
+        <img src="assets/images/Explore Packages by Travel Style 11.jpg" alt="North Passage Exclusive">
+        <span class="package-type adventure">Adventure</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -1071,11 +1068,10 @@
       </div>
     </div>
 
-     <!-- Card 11-->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 11.jpg" alt="Andaman Delight">
-        <span class="package-type honeymoon">Budget</span>
+        <img src="assets/images/Explore Packages by Travel Style 11.jpg" alt="Wanderlust Andaman">
+        <span class="package-type budget">Budget</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
@@ -1103,15 +1099,14 @@
       </div>
     </div>
 
-     <!-- Card 12 -->
     <div class="explorepackage-card">
       <div class="explorecard-image">
-        <img src="assets/images/Explore Packages by Travel Style 12.png" alt="Andaman Delight">
+        <img src="assets/images/Explore Packages by Travel Style 12.png" alt="Incredible Andaman">
         <span class="package-type honeymoon">Honeymoon</span>
       </div>
       <div class="explorecard-content">
         <div class="explorecard-title">
-          <h3>Incredible Andaman </h3>
+          <h3>Incredible Andaman</h3>
           <span class="duration">7D/6N</span>
         </div>
         <p class="itinerary">
@@ -1136,96 +1131,85 @@
     </div>
 
   </div>
-
-  <!-- View More Button -->
   <div class="view-more">
     <a href="#">View More →</a>
   </div>
 </section>
- <!-- Top Experiences Section -->
+
 <section class="ae-top-experiences">
-  
-    <!-- Main Title -->
-    <div class="ae-section-title">
-      <h2>Top Experiences in Andaman</h2>
-      <p>Explore popular islands, cruises, and unforgettable sights.</p>
+  <div class="ae-section-title">
+    <h2>Top Experiences in Andaman</h2>
+    <p>Explore popular islands, cruises, and unforgettable sights.</p>
+  </div>
+
+  <div class="ae-experience-category">
+    <div class="ae-category-header">
+      <h3>Popular Islands</h3>
+      <a href="#">View All →</a>
     </div>
-
-    <!-- Experiences -->
-
-      <!-- Popular Islands -->
-      <div class="ae-experience-category">
-            <div class="ae-category-header">
-              <h3>Popular Islands</h3>
-              <a href="#">View All →</a>
-            </div>
-        <div class="ae-cards-wrapper">
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular Islands 1.png" alt="Port Blair">
-                <div class="ae-card-overlay"><p>Port Blair (Sri Vijaya Puram)</p></div>
-              </div>
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular Islands 2.png" alt="Havelock">
-                <div class="ae-card-overlay"><p>Havelock (Swaraj Dweep)</p></div>
-              </div>
-                <div class="ae-experience-card">
-                  <img src="assets/images/Popular Islands 3.png" alt="Diglipur">
-                  <div class="ae-card-overlay"><p>Diglipur</p></div>
-                </div>
-        </div>
+    <div class="ae-cards-wrapper">
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Islands 1.png" alt="Port Blair">
+        <div class="ae-card-overlay"><p>Port Blair (Sri Vijaya Puram)</p></div>
       </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Islands 2.png" alt="Havelock">
+        <div class="ae-card-overlay"><p>Havelock (Swaraj Dweep)</p></div>
+      </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Islands 3.png" alt="Diglipur">
+        <div class="ae-card-overlay"><p>Diglipur</p></div>
+      </div>
+    </div>
+  </div>
 
-      <!-- Popular Cruises -->
-      <div class="ae-experience-category">
-        <div class="ae-category-header">
-          <h3>Popular Cruises</h3>
-          <a href="#">View All →</a>
-        </div>
-        <div class="ae-cards-wrapper">
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular Cruises 1.png" alt="Makruzz">
-                <div class="ae-card-overlay"><p>Makruzz</p></div>
-              </div>
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular Cruises 2.png" alt="Green Ocean">
-                <div class="ae-card-overlay"><p>Nautika</p></div>
-              </div>
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular Cruises 3.png" alt="ITT Majestic">
-                <div class="ae-card-overlay"><p>Makruzz Gold 2</p></div>
-              </div>
-        </div>
+  <div class="ae-experience-category">
+    <div class="ae-category-header">
+      <h3>Popular Cruises</h3>
+      <a href="#">View All →</a>
+    </div>
+    <div class="ae-cards-wrapper">
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Cruises 1.png" alt="Makruzz">
+        <div class="ae-card-overlay"><p>Makruzz</p></div>
       </div>
-       <!-- Popular Cruises -->
-      <div class="ae-experience-category">
-        <div class="ae-category-header">
-          <h3>Popular Sightseeing Spots</h3>
-          <a href="#">View All →</a>
-        </div>
-        <div class="ae-cards-wrapper">
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular-Sight-Seeing1.png" alt="Makruzz">
-                <div class="ae-card-overlay"><p>Radhanagar Beach</p></div>
-              </div>
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular-Sight-Seeing2.png" alt="Green Ocean">
-                <div class="ae-card-overlay"><p>Elephant Beach</p></div>
-              </div>
-              <div class="ae-experience-card">
-                <img src="assets/images/Popular-Sight-Seeing3.png" alt="ITT Majestic">
-                <div class="ae-card-overlay"><p>Joly Buoy Island </p></div>
-              </div>
-        </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Cruises 2.png" alt="Green Ocean">
+        <div class="ae-card-overlay"><p>Nautika</p></div>
       </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular Cruises 3.png" alt="ITT Majestic">
+        <div class="ae-card-overlay"><p>Makruzz Gold 2</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ae-experience-category">
+    <div class="ae-category-header">
+      <h3>Popular Sightseeing Spots</h3>
+      <a href="#">View All →</a>
+    </div>
+    <div class="ae-cards-wrapper">
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular-Sight-Seeing1.png" alt="Radhanagar Beach">
+        <div class="ae-card-overlay"><p>Radhanagar Beach</p></div>
+      </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular-Sight-Seeing2.png" alt="Elephant Beach">
+        <div class="ae-card-overlay"><p>Elephant Beach</p></div>
+      </div>
+      <div class="ae-experience-card">
+        <img src="assets/images/Popular-Sight-Seeing3.png" alt="Joly Buoy Island">
+        <div class="ae-card-overlay"><p>Joly Buoy Island</p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Testimonial Section -->
 <section class="ts-testimonial-section">
   <div class="ts-container">
     <h2>What Our Travelers Say</h2>
     <div class="ts-testimonial-cards">
-
-      <!-- Card 1 -->
       <div class="ts-testimonial-card">
         <div class="ts-video-wrapper">
           <iframe 
@@ -1239,7 +1223,6 @@
         <p class="ts-profession">Software Engineer</p>
       </div>
 
-      <!-- Card 2 -->
       <div class="ts-testimonial-card">
         <div class="ts-video-wrapper">
           <iframe 
@@ -1253,7 +1236,6 @@
         <p class="ts-profession">Marketing Specialist</p>
       </div>
 
-      <!-- Card 3 -->
       <div class="ts-testimonial-card">
         <div class="ts-video-wrapper">
           <iframe 
@@ -1266,14 +1248,11 @@
         <p class="ts-name">David Smith</p>
         <p class="ts-profession">Entrepreneur</p>
       </div>
-
     </div>
   </div>
 </section>
 
- <!-- Cab Section -->
 <section class="cab-section">
-  <!-- Text Section -->
   <div class="cab-text">
     <h2>Need Local Transfers?</h2>
     <h3>Book Your Cab in Advance.</h3>
@@ -1287,18 +1266,15 @@
     </button>
   </div>
 
-  <!-- Image Section -->
   <div class="cab-image">
     <img src="./assets/images/toyota.png" alt="Cab" class="cab-car">
     <img src="./assets/images/girl.png" alt="Traveler" class="cab-girl">
   </div>
 </section>
 
-<!-- FAQ Section -->
 <section class="faq-section">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-container">
-    <!-- Left Column -->
     <div class="faq-column">
       <div class="faq-item" x-data="{ open: true }">
         <button @click="open = !open">
@@ -1329,7 +1305,6 @@
       </div>
     </div>
 
-    <!-- Right Column -->
     <div class="faq-column">
       <div class="faq-item" x-data="{ open: false }">
         <button @click="open = !open">
@@ -1359,18 +1334,10 @@
     </div>
   </div>
 </section>
-<!-- Add Alpine.js for toggle functionality -->
-<script src="https://unpkg.com/alpinejs" defer></script>
-<!-- About the island section -->
- <!-- *************************** Hotels in Andaman Section *******************************-->
-  <!-- **************************** About island  **********************************  -->
-<article class="about-island">
-  <!-- Text Section -->
-  <div class="about-text">
-    <!-- Title -->
-    <h2>About Andaman Islands</h2>
 
-    <!-- Description -->
+<article class="about-island">
+  <div class="about-text">
+    <h2>About Andaman Islands</h2>
     <p>
       The Andaman Islands are a chain of over 300 tropical islands scattered across the Bay of Bengal, 
       known for their stunning white-sand beaches, crystal-clear waters, vibrant coral reefs, and lush rainforests teeming with rare wildlife.
@@ -1379,27 +1346,19 @@
       <br><br>
       This visual map gives you a quick overview of the major islands, key attractions, and travel routes to help you plan your perfect getaway and make the most of your time exploring this extraordinary paradise.
     </p>
-
-    <!-- Button -->
     <button class="about-btn">
       Explore Islands <span>→</span>
     </button>
   </div>
-
-  <!-- Map Image -->
   <div class="about-map">
     <img src="assets/images/Map.png" alt="Andaman Islands Map">
   </div>
 </article>
 
-<!--  *************************the travel tips and guides section ************** -->
 <article class="travel-tips">
-  <!-- Title -->
   <h2>Travel Tips & Guides</h2>
 
-  <!-- Cards Container -->
   <div class="travel-cards">
-    <!-- Card 1 -->
     <div class="travel-card">
       <img src="assets/images/Travel Trip & Guides 1.png" alt="Top Places to Stay in Andaman" />
       <div class="card-content">
@@ -1416,7 +1375,6 @@
       </div>
     </div>
 
-    <!-- Card 2 -->
     <div class="travel-card">
       <img src="assets/images/Travel Trip & Guides 2.png" alt="Top 54 Things to Do in Andaman" />
       <div class="card-content">
@@ -1432,7 +1390,6 @@
       </div>
     </div>
 
-    <!-- Card 3 -->
     <div class="travel-card">
       <img src="assets/images/Travel Trip & Guides 3.png" alt="5 Star Luxury Resorts in Andaman" />
       <div class="card-content">
@@ -1450,31 +1407,24 @@
     </div>
   </div>
 </article>
-<!-- form section  -->
- <!-- ************************** Form Section ************************************ -->
+
 <section class="form-section">
-  <!-- Left Side - Form -->
   <div class="form-left">
-    <!-- Title -->
     <h2 class="form-title">
       Start Planning Your Andaman Trip
     </h2>
 
-    <!-- Form -->
     <form class="form">
       <div class="form-row">
-        <!-- Full Name -->
         <div class="form-group">
           <input type="text" placeholder="Full Name">
         </div>
-        <!-- Email -->
         <div class="form-group">
           <input type="email" placeholder="Email">
         </div>
       </div>
 
       <div class="form-row">
-        <!-- Phone Number -->
         <div class="form-phone">
           <select>
             <option value="+91">🇮🇳 +91</option>
@@ -1483,81 +1433,42 @@
           <input type="tel" placeholder="Phone Number">
         </div>
 
-        <!-- Arrival Date -->
         <div class="form-date">
           <input type="date" placeholder="Arrival Date">
         </div>
       </div>
 
-      <!-- Message -->
       <div class="form-group">
         <input type="text" placeholder="Message">
       </div>
 
-      <!-- Submit Button -->
       <button type="submit" class="form-submit">
         Submit
       </button>
     </form>
   </div>
 
-  <!-- Right Side - Image -->
   <div class="form-right">
     <img src="assets/images/suitcase.png" alt="Travel Bag">
   </div>
 </section>
 
-<!-- Video Modal -->
-<!-- <div id="videoModal" class="video-modal hidden">
-  <div class="video-container">
-    <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
-    <button id="closeModal" class="close-btn">✕</button>
-  </div>
-</div> -->
-
-<script>
-  const playButton = document.getElementById('playButton');
-  const videoModal = document.getElementById('videoModal');
-  const youtubeFrame = document.getElementById('youtubeFrame');
-  const closeModal = document.getElementById('closeModal');
-
-  if (playButton) {
-    playButton.addEventListener('click', () => {
-      youtubeFrame.src = "https://www.youtube.com/embed/VeKw3OTPZ40?autoplay=1";
-      videoModal.classList.remove('hidden');
-    });
-  }
-
-  closeModal.addEventListener('click', () => {
-    youtubeFrame.src = "";
-    videoModal.classList.add('hidden');
-  });
-</script>
- <!-- *********************** footer section ************************** -->
- <!-- *********************** footer section ************************** -->
 <footer class="footer">
   <div class="footer-container">
 
-    <!-- Top Row: Logo + Contact Info -->
     <div class="footer-top">
-      <!-- Logo -->
       <div class="footer-logo">
         <img src="assets/images/Logo.png" alt="Experience Andamans Logo">
       </div>
-      <!-- Contact -->
       <div class="footer-contact">
-        <div><i class="fa-solid fa-phone"></i>  +91-7026370370 / 7026371371</div>
-        <div><i class="fa-solid fa-envelope"></i>  info@experienceandamans.com</div>
+        <div><i class="fa-solid fa-phone"></i> +91-7026370370 / 7026371371</div>
+        <div><i class="fa-solid fa-envelope"></i> info@experienceandamans.com</div>
       </div>
     </div>
 
-    <!-- Divider -->
     <div class="footer-divider"></div>
 
-    <!-- Main Footer Content -->
     <div class="footer-grid">
-      
-      <!-- Column 1 -->
       <div class="footer-col">
         <h4>Company Information</h4>
         <div class="footer-text">
@@ -1583,7 +1494,6 @@
         </div>
       </div>
 
-      <!-- Column 2 -->
       <div class="footer-col">
         <div>
           <h4>Top Experiences</h4>
@@ -1611,7 +1521,6 @@
         </div>
       </div>
 
-      <!-- Column 3 -->
       <div class="footer-col">
         <h4>Company Info</h4>
         <div class="footer-links">
@@ -1638,10 +1547,8 @@
       </div>
     </div>
 
-    <!-- Divider -->
     <div class="footer-divider"></div>
 
-    <!-- Bottom Row -->
     <div class="footer-bottom">
       <div>© 2025 Experience Andamans.</div>
       <div class="footer-policies">
@@ -1650,7 +1557,10 @@
         <a href="/privacy-policy">Privacy Policy</a>
       </div>
     </div>
+    
   </div>
 </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
 </body>
 </html>
