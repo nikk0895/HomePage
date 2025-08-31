@@ -15,10 +15,6 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 
 /* Header Styles */
 .header {
@@ -685,14 +681,14 @@ height: 18px;
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 .header-container {
 padding: 0 16px;
 }
 
 .logo-container {
-width: 120px;
-height: 32px;
+width: 160px;
+height: 45px;
 }
 
 .header-actions {
@@ -717,22 +713,6 @@ gap: 16px;
 align-self: center;
 }
 }
-
-@media (max-width: 360px) {
-.header-container {
-padding: 0 12px;
-}
-
-.logo-container {
-width: 100px;
-height: 28px;
-}
-
-.header-actions {
-gap: 4px;
-}
-}
-
 /* ************************************************************************************ */
 /* the review section  */
 .review-section {
