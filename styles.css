@@ -419,7 +419,27 @@ html, body {
     padding: 0;
   }
 }
+/* Mobile adjustment for margin-top under 768px */
+@media (max-width: 768px) {
+  .headbanner-section {
+    margin-top: -150px;
+     margin-left: 16px;
+    margin-right: 16px; /* smaller negative margin for mobile */
+    width: auto; /* adjust padding for small screens */
+    text-align: center;
+  }
+}
 
+/* Extra small screens under 440px */
+@media (max-width: 440px) {
+  .headbanner-section {
+    margin-top: -150px; /* even smaller negative margin */
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+    width: auto;
+  }
+}
 .headbanner-left {
   display: flex;
   flex-direction: column;
@@ -713,6 +733,8 @@ gap: 16px;
 align-self: center;
 }
 }
+
+
 /* ************************************************************************************ */
 /* the review section  */
 .review-section {
