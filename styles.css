@@ -590,7 +590,6 @@ html, body {
 }
 
 @media (max-width: 600px) {
-  
   .review-card {
     flex: 0 0 90%;
   }
@@ -1287,15 +1286,14 @@ html, body {
 /* ---------- 50-50 Plan Section ---------- */
 .plan-section {
   background: linear-gradient(180deg, #F4EBD0 0%, rgba(244, 235, 208, 0.54) 213.41%);
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px 20px;     /*  uniform padding */
+ max-width: 1440px;
+margin: 0 auto;  
 }
 
 .plan-container {
-  max-width: 1240px;       /*  keep inner content aligned like other sections */
-  margin: 0 auto;
-  width: 100%;
+  max-width: 1440px;
+margin: 0 auto;
+padding: 40px 20px;
 }
 
 .plan-content {
@@ -1311,8 +1309,6 @@ html, body {
   .plan-content {
     flex-direction: row;   /* switch to row layout on tablet+ */
     text-align: left;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
