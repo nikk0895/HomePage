@@ -1,0 +1,225 @@
+.headbanner-section {
+  position: relative;
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  margin: -150px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 10;
+  background: linear-gradient(267.52deg, #0ea5e9 0%, #1e3a8a 99.57%);
+  padding: 2rem 1.5rem;
+}
+
+.headbanner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
+}
+
+.headbanner-title {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 110%;
+  max-width: 562px;
+  margin-bottom: 1rem;
+}
+
+.headbanner-desc {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  max-width: 562px;
+  margin-bottom: 1.5rem;
+}
+
+.headbanner-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.headbanner-search-input {
+  flex-grow: 1;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #898989;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.headbanner-search-btn {
+  width: 38px;
+  height: 38px;
+  background: #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  margin-right: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.headbanner-search-icon {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+.headbanner-right {
+  position: relative;
+  width: 100%;
+  max-width: 549px;
+  height: auto;
+  display: none;
+}
+
+.headbanner-img {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-banner-section{
+  position:relative;z-index:1;max-width:1440px;width:100%;margin:87px auto 0;display:flex;flex-direction:column;padding:24px;background:linear-gradient(to bottom,#f4ebd0 0%,rgba(244,235,208,.54) 100%);min-height:240px
+}
+.icon-container{display:flex;justify-content:space-between;align-items:flex-start;width:100%}
+.icon-nav{flex:1;overflow-x:auto;scrollbar-width:none;margin-right:16px;padding-left:0}
+.icon-nav::-webkit-scrollbar{display:none}
+.icon-list{display:flex;gap:10px;flex-wrap:nowrap;height:auto;padding:4px 0;justify-content:flex-start;align-items:center;margin:0;list-style:none}
+.icon-list>*:first-child{margin-left:0}
+.icon-item{display:flex;flex-direction:column;align-items:center;text-align:left;min-width:40px;flex-shrink:0;font-size:13px;font-weight:700;color:#111;text-decoration:none;transition:transform .2s}
+.icon-item:hover{transform:translateY(-2px)}
+.icon-item img{width:32px;height:32px;margin-bottom:2px}
+.tripadvisor{display:flex;align-items:center;flex-shrink:0}
+.tripadvisor-logo{background:#00e09e;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:14px}
+.tripadvisor-logo img{width:38px;height:38px}
+.tripadvisor-text{display:none;margin-left:16px;line-height:1.4;font-family:sans-serif}
+.tripadvisor-text span{font-size:16px;font-weight:700;color:#111}
+.tripadvisor-text .highlight{color:#ff6600}
+.tripadvisor-text .reviews{font-size:14px;font-weight:600;color:#333}
+@media (max-width:768px){
+  .icon-list{gap:8px}
+  .icon-item{font-size:12px}
+  .tripadvisor-text{display:none}
+}
+
+
+@media (min-width: 1024px) {
+  .tripadvisor-text {
+    display: block;
+  }
+}
+
+
+/* Media Queries */
+/* ---------------- Mobile (up to 767px) ---------------- */
+@media (max-width: 767px) {
+  .headbanner-section {
+    margin: -150px 16px 0;
+    width: auto;
+    text-align: center;
+  }
+  .banner-section {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .banner-text {
+    max-width: 100%;
+  }
+  .banner-text h1 {
+    font-size: 28px;
+  }
+  .search-bar {
+    max-width: 100%;
+    height: 50px;
+  }
+  .search-bar button {
+    width: 38px;
+    height: 38px;
+  }
+  .search-bar svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+}
+
+/* ---------------- Tablet & Desktop (768px and above) ---------------- */
+@media (min-width: 768px) {
+  .header-container {
+    padding: 0 49px;
+  }
+  .mobile-menu-btn,
+  .mobile-action,
+  .mobile-menu {
+    display: none !important;
+  }
+  .logo-container {
+    width: 198px;
+    height: 63px;
+  }
+  .desktop-nav {
+    display: flex;
+    gap: 32px;
+  }
+  .desktop-action {
+    display: flex;
+  }
+  .banner-image {
+    display: block;
+  }
+  
+}
+
+
+@media (min-width: 1024px) {
+  .headbanner-section { flex-direction: row; height: 263px; padding: 0; }
+  .headbanner-left { padding: 0 40px; height: 100%; }
+  .headbanner-title { font-size: 38px; line-height: 100%; margin-bottom: 16px; }
+  .headbanner-desc { font-size: 16px; line-height: 28px; margin-bottom: 24px; }
+  .headbanner-search { height: 60px; }
+  .headbanner-search-input { font-size: 16px; padding: 0 20px; }
+  .headbanner-search-btn { width: 44px; height: 44px; margin-right: 8px; }
+  .headbanner-search-icon { width: 20px; height: 20px; }
+  .headbanner-right { display: block; height: 548px; top: -24px; overflow: hidden; }
+  .headbanner-img { display: block; width: 690.28px; height: 460.19px; position: absolute; top: 92.56px; left: 0; object-fit: cover; border-radius: 0.5rem; clip-path: ellipse(60% 70% at 70% 30%); }
+  .icon-banner-section { padding: 16px clamp(16px,4.5%, 100px);}
+  .icon-list { gap: 44px; }
+  .tripadvisor-text { display: block; }
+  .banner-section { flex-direction: row; height: 263px; padding: 40px; margin: -30px 0 30px; }
+  .banner-text { max-width: 690px; }
+  .search-bar { max-width: 689px; }
+}
