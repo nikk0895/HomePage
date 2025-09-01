@@ -14,3 +14,26 @@ document.querySelectorAll('.ts-video-wrapper').forEach(wrapper => {
     wrapper.appendChild(iframe);
   });
 });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const previews = document.querySelectorAll(".video-preview");
+
+    previews.forEach(preview => {
+      const videoId = preview.getAttribute("data-video-id");
+      const playBtn = preview.querySelector(".play-btn");
+
+      playBtn.addEventListener("click", () => {
+        preview.innerHTML = `
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        `;
+      });
+    });
+  });
+

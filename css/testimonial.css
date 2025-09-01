@@ -28,23 +28,14 @@
   overflow-x: auto;
   padding-bottom: 1rem;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
-/* Testimonial Card */
 .ts-testimonial-card {
-  flex: 0 0 auto;
-  width: 400px;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
+  flex: 0 0 80%;             /* ✅ takes 80% of screen width */
+  max-width: 400px;          /* ✅ keeps reasonable width */
+  scroll-snap-align: start;  /* ✅ snaps cards */
 }
-
 /* Video Wrapper */
 .ts-video-wrapper {
   position: relative;
@@ -92,36 +83,51 @@
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0.25rem 0;
+  text-align: center;
 }
 
 .ts-profession {
   font-size: 0.95rem;
   color: #555;
+  text-align: center;
+}
+.ts-testimonial-section {
+  position: relative;
+}
+
+.video-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.video-btn {
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.video-btn:hover {
+  background: #e55a00;
 }
 
 /* ---------------- Responsive ---------------- */
 
-/* Mobile: up to 480px */
-@media (max-width: 480px) {
-  .ts-testimonial-cards {
-    gap: 1rem;
-  }
+/* Tablet: 481px to 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
   .ts-testimonial-card {
-    width: 100%;
-  }
-  .ts-testimonial-section h2 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
-
-/* Tablet: 481px to 768px */
-@media (min-width: 481px) and (max-width: 768px) {
-  .ts-testimonial-cards {
-    gap: 1.5rem;
-  }
-  .ts-testimonial-card {
-    width: 70%;
+    flex: 0 0 60%;  /* shows more cards side by side */
   }
   .ts-testimonial-section h2 {
     font-size: 1.8rem;
@@ -135,13 +141,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    overflow-x: visible;
+    overflow-x: visible;   /* ✅ no scroll needed */
   }
   .ts-testimonial-card {
-    width: 100%;
+    flex: unset;           /* reset flex */
+    width: 100%;           /* grid handles width */
   }
   .ts-testimonial-section h2 {
     text-align: left;
     font-size: 2rem;
+  }
+}
+@media (max-width: 1023px) {
+  .video-controls {
+    display: none;
   }
 }

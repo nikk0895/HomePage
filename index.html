@@ -10,7 +10,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/icon_banner.css">
+   <link rel="stylesheet" href="css/package.css">
+    <link rel="stylesheet" href="css/top_experience.css">
+    <link rel="stylesheet" href="css/explore_packages.css">
     <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/faq.css">
+
   <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -722,14 +727,17 @@
 
 <article class="about-section">
 
-  <div class="video-preview">
-    <img src="assets/images/Azar.png" alt="Video Preview" />
-    <button id="playButton" class="play-btn">
-      <div class="play-circle">
-        <img src="assets/icons/play.svg" alt="Play Icon" />
-      </div>
-    </button>
-  </div>
+<div class="video-preview" data-video-id="VeKw3OTPZ40">
+  <!-- Thumbnail -->
+  <img src="assets/images/Azar.png" alt="Video Preview" />
+
+  <!-- Play Button -->
+  <button class="play-btn">
+    <div class="play-circle">
+      <img src="assets/icons/play.svg" alt="Play Icon" />
+    </div>
+  </button>
+</div>
 
   <div class="about-text">
     <h2>About Experience Andamans</h2>
@@ -1213,22 +1221,33 @@
     </div>
   </div>
 </section>
+
 <section class="ts-testimonial-section">
   <div class="ts-container">
     <h2>What Our Travelers Say</h2>
-    <div class="ts-testimonial-cards">
 
+    <!-- Navigation Buttons -->
+    <div class="video-controls">
+      <button class="video-btn prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="video-btn next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="ts-testimonial-cards">
       <!-- Testimonial Card 1 -->
       <div class="ts-testimonial-card">
         <div class="ts-video-wrapper" data-video-id="taHRlXwVqHs">
           <img src="assets/images/testimonial.png" 
                alt="Testimonial Video 1" 
                class="ts-video-thumbnail" />
-         <button id="playButton" class="play-btn">
-      <div class="play-circle">
-        <img src="assets/icons/play.svg" alt="Play Icon" />
-      </div>
-    </button>
+          <button class="play-btn">
+            <div class="play-circle">
+              <img src="assets/icons/play.svg" alt="Play Icon" />
+            </div>
+          </button>
         </div>
         <p class="ts-name">John Doe</p>
         <p class="ts-profession">Software Engineer</p>
@@ -1240,11 +1259,11 @@
           <img src="assets/images/testimonial2.png" 
                alt="Testimonial Video 2" 
                class="ts-video-thumbnail" />
-          <button id="playButton" class="play-btn">
-      <div class="play-circle">
-        <img src="assets/icons/play.svg" alt="Play Icon" />
-      </div>
-    </button>
+          <button class="play-btn">
+            <div class="play-circle">
+              <img src="assets/icons/play.svg" alt="Play Icon" />
+            </div>
+          </button>
         </div>
         <p class="ts-name">Sarah Williams</p>
         <p class="ts-profession">Marketing Specialist</p>
@@ -1256,21 +1275,18 @@
           <img src="assets/images/testimonial3.png" 
                alt="Testimonial Video 3" 
                class="ts-video-thumbnail" />
-        <button id="playButton" class="play-btn">
-      <div class="play-circle">
-        <img src="assets/icons/play.svg" alt="Play Icon" />
-      </div>
-    </button>
+          <button class="play-btn">
+            <div class="play-circle">
+              <img src="assets/icons/play.svg" alt="Play Icon" />
+            </div>
+          </button>
         </div>
         <p class="ts-name">David Smith</p>
         <p class="ts-profession">Entrepreneur</p>
       </div>
-
     </div>
   </div>
 </section>
-
-
 
 <section class="cab-section">
   <div class="cab-text">
