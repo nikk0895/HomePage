@@ -1,0 +1,120 @@
+.sale-section {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.sale-banner {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #fdc694 0%, #fdd8c7 20%, #d8eac8 60%, #a8e6a3 100%);
+}
+
+.sale-images {
+  flex: 1;
+  position: relative;
+  padding: 1rem;
+  min-height: 220px;
+}
+
+.sale-images img {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 4px solid white;
+}
+
+.sale-images .img1 {
+  top: 24px;
+  left: 40px;
+  width: 128px;
+  height: 96px;
+  transform: rotate(-5deg);
+}
+
+.sale-images .img2 {
+  top: 80px;
+  left: 80px;
+  width: 160px;
+  height: 112px;
+  transform: rotate(3deg);
+}
+
+.sale-images .img3 {
+  top: 40px;
+  left: 160px;
+  width: 144px;
+  height: 112px;
+  transform: rotate(8deg);
+}
+
+.sale-content {
+  flex: 2;
+  padding: 2rem;
+}
+
+.sale-content h2 {
+  color: #ea580c;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sale-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.sale-content p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.sale-content p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sale-content button {
+  margin-top: 16px;
+  background: white;
+  color: #111827;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .sale-images {
+    display: none;
+  }
+
+  .sale-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .sale-content {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .sale-content h2 {
+    font-size: 26px;
+  }
+
+  .sale-content h3 {
+    font-size: 16px;
+  }
+
+  .sale-content p {
+    font-size: 15px;
+  }
+}
