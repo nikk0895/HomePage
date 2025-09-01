@@ -8,7 +8,9 @@
   <title>Experience Andaman</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="css/icon_banner.css"> 
+  <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/icon_banner.css">
+    <link rel="stylesheet" href="css/testimonial.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -318,7 +320,7 @@
         <p class="benefit-desc">Experience Andaman with our expert-guided tours.</p>
       </div>
       <div class="benefit-circle">
-        <img src="assets/icons/exclusive3.svg" alt="Travel" />
+        <img src="assets/images/ground1.png" alt="Travel" />
       </div>
     </div>
 
@@ -349,10 +351,10 @@
 
   <div class="certified-logos-wrapper">
     <div class="certified-logos">
-      <img src="assets/images/Certified by 1.png" alt="Incredible India" class="logo logo-1" />
-      <img src="assets/icons/certified1.svg" alt="Andamans" class="logo logo-2" />
-      <img src="assets/icons/certified2.svg" alt="IATO" class="logo logo-3" />
-      <img src="assets/images/Certified by 4.png" alt="TAAI" class="logo logo-4" />
+      <img src="assets/images/Certified by 1.png" alt="Incredible India" class="certi logo-1" />
+      <img src="assets/icons/certified1.svg" alt="Andamans" class="certi logo-2" />
+      <img src="assets/icons/certified2.svg" alt="IATO" class="certi logo-3" />
+      <img src="assets/images/Certified by 4.png" alt="TAAI" class="certi logo-4" />
     </div>
   </div>
 </section>
@@ -721,7 +723,7 @@
 <article class="about-section">
 
   <div class="video-preview">
-    <img src="https://img.youtube.com/vi/VeKw3OTPZ40/hqdefault.jpg" alt="Video Preview" />
+    <img src="assets/images/Azar.png" alt="Video Preview" />
     <button id="playButton" class="play-btn">
       <div class="play-circle">
         <img src="assets/icons/play.svg" alt="Play Icon" />
@@ -1211,52 +1213,64 @@
     </div>
   </div>
 </section>
-
 <section class="ts-testimonial-section">
   <div class="ts-container">
     <h2>What Our Travelers Say</h2>
     <div class="ts-testimonial-cards">
+
+      <!-- Testimonial Card 1 -->
       <div class="ts-testimonial-card">
-        <div class="ts-video-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/taHRlXwVqHs" 
-            title="Testimonial Video 1"
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
+        <div class="ts-video-wrapper" data-video-id="taHRlXwVqHs">
+          <img src="assets/images/testimonial.png" 
+               alt="Testimonial Video 1" 
+               class="ts-video-thumbnail" />
+         <button id="playButton" class="play-btn">
+      <div class="play-circle">
+        <img src="assets/icons/play.svg" alt="Play Icon" />
+      </div>
+    </button>
         </div>
         <p class="ts-name">John Doe</p>
         <p class="ts-profession">Software Engineer</p>
       </div>
 
+      <!-- Testimonial Card 2 -->
       <div class="ts-testimonial-card">
-        <div class="ts-video-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/Eg7mGL_IIzo" 
-            title="Testimonial Video 2"
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
+        <div class="ts-video-wrapper" data-video-id="Eg7mGL_IIzo">
+          <img src="assets/images/testimonial2.png" 
+               alt="Testimonial Video 2" 
+               class="ts-video-thumbnail" />
+          <button id="playButton" class="play-btn">
+      <div class="play-circle">
+        <img src="assets/icons/play.svg" alt="Play Icon" />
+      </div>
+    </button>
         </div>
         <p class="ts-name">Sarah Williams</p>
         <p class="ts-profession">Marketing Specialist</p>
       </div>
 
+      <!-- Testimonial Card 3 -->
       <div class="ts-testimonial-card">
-        <div class="ts-video-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/qxwch6aFFMw" 
-            title="Testimonial Video 3"
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
+        <div class="ts-video-wrapper" data-video-id="qxwch6aFFMw">
+          <img src="assets/images/testimonial3.png" 
+               alt="Testimonial Video 3" 
+               class="ts-video-thumbnail" />
+        <button id="playButton" class="play-btn">
+      <div class="play-circle">
+        <img src="assets/icons/play.svg" alt="Play Icon" />
+      </div>
+    </button>
         </div>
         <p class="ts-name">David Smith</p>
         <p class="ts-profession">Entrepreneur</p>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 <section class="cab-section">
   <div class="cab-text">
@@ -1568,5 +1582,6 @@
 </footer>
   <script src="script.js"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="play.js"></script>
 </body>
 </html>
