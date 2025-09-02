@@ -525,7 +525,7 @@ font-size: 34px !important;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.4;
-  margin-top: -20px; 
+
 }
 
 .about-content {
@@ -871,22 +871,22 @@ font-size: 34px !important;
   background: linear-gradient(180deg, #F4EBD0 0%, rgba(244, 235, 208, 0.54) 253.57%);
 }
 
-.about-text {
+.about-island-text {
   width: 100%;
   max-width: 601px;
   text-align: center;
   margin-bottom: 32px;
 }
 
-.about-text h2 {
+.about-island-text h2 {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   color: #0D0D0D;
   margin-bottom: 24px;
 }
 
-.about-text p {
+.about-island-text p {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -940,13 +940,13 @@ font-size: 34px !important;
     gap: 60px;
   }
 
-  .about-text,
+  .about-island-text,
   .about-map {
     flex: 1;
     max-width: 600px;
   }
 
-  .about-text {
+  .about-island-text {
     text-align: left;
     margin-bottom: 0;
     margin-top: 40px;
