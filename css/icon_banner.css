@@ -223,3 +223,16 @@
   .banner-text { max-width: 690px; }
   .search-bar { max-width: 689px; }
 }
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .icon-list {
+    gap: 18px; /* slightly tighter for small screens */
+  }
+  .icon-item {
+    font-size: 12px;
+  }
+  .tripadvisor-text {
+    display: none;
+  }
+}
+
