@@ -1,4 +1,3 @@
-/* ---------------- Testimonial Section ---------------- */
 .ts-testimonial-section {
   width: 100%;
   max-width: 1440px;
@@ -20,7 +19,6 @@
   font-weight: bold;
 }
 
-/* ---------------- Testimonial Cards ---------------- */
 .ts-testimonial-cards {
   display: flex;
   gap: 1.5rem;
@@ -32,11 +30,11 @@
 }
 
 .ts-testimonial-card {
-  flex: 0 0 80%;             /* ✅ takes 80% of screen width */
-  max-width: 400px;          /* ✅ keeps reasonable width */
-  scroll-snap-align: start;  /* ✅ snaps cards */
+  flex: 0 0 80%;            
+  max-width: 400px;         
+  scroll-snap-align: start;
 }
-/* Video Wrapper */
+
 .ts-video-wrapper {
   position: relative;
   width: 100%;
@@ -63,10 +61,10 @@ width: 100%;
   width: 32px;
   height: 32px;
 }
-/* Play Button */
+
 .ts-video-wrapper .play-btn {
   position: absolute;
-  inset: 0; /* takes full thumbnail area */
+  inset: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +89,6 @@ width: 100%;
   background: rgba(255, 102, 0, 1);
 }
 
-/* Name & Profession */
 .ts-name {
   font-weight: bold;
   font-size: 1.1rem;
@@ -135,12 +132,9 @@ width: 100%;
   background: #e55a00;
 }
 
-/* ---------------- Responsive ---------------- */
-
-/* Tablet: 481px to 1023px */
 @media (min-width: 481px) and (max-width: 1023px) {
   .ts-testimonial-card {
-    flex: 0 0 60%;  /* shows more cards side by side */
+    flex: 0 0 60%;  
   }
   .ts-testimonial-section h2 {
     font-size: 1.8rem;
@@ -148,17 +142,16 @@ width: 100%;
   }
 }
 
-/* Desktop: 1024px and above */
 @media (min-width: 1024px) {
   .ts-testimonial-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    overflow-x: visible;   /* ✅ no scroll needed */
+    overflow-x: visible;   
   }
   .ts-testimonial-card {
-    flex: unset;           /* reset flex */
-    width: 100%;           /* grid handles width */
+    flex: unset;           
+    width: 100%;           
   }
   .ts-testimonial-section h2 {
     text-align: left;

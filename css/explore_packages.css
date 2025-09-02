@@ -213,7 +213,6 @@
   }
 }
 
-/* Tablet view */
 @media (max-width: 1023px) and (min-width: 601px) {
   .explore-header h2 {
      display: block;
@@ -222,7 +221,6 @@
   }
 }
 
-/* Mobile view */
 @media (max-width: 600px) {
   .explore-header h2 {
     display: block;

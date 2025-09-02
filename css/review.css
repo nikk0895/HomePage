@@ -71,8 +71,6 @@
   stroke: #facc15;
   stroke-width: 1;
 }
-
-/* Tablet and below (≤1024px) */
 @media (max-width: 1024px) {
   .review-container {
     display: flex;
@@ -86,7 +84,7 @@
   }
 
   .review-card {
-    flex: 0 0 80%;   /* 🔹 smaller so they don’t stretch too much */
+    flex: 0 0 80%;   
     scroll-snap-align: start;
      border-radius: 12px;
     padding: 24px;
@@ -94,7 +92,6 @@
   }
 }
 
-/* Mobile only (≤600px) */
 @media (max-width: 600px) {
  .review-container{
    padding: 0 16px;
@@ -102,6 +99,6 @@
  }
 
   .review-card {
-    flex: 0 0 90%;   /* 🔹 slightly wider for small screens */
+    flex: 0 0 90%;   
   }
 }

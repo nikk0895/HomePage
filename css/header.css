@@ -15,7 +15,6 @@ html, body {
   width: 100%;
 }
 
-/* ---------------- Header ---------------- */
 .header {
   position: fixed;
   top: 0;
@@ -50,7 +49,6 @@ html, body {
   align-items: center;
 }
 
-/* ---------------- Mobile Menu Button ---------------- */
 .mobile-menu-btn {
   display: flex;
   align-items: center;
@@ -69,7 +67,6 @@ html, body {
 
 .menu-icon { width: 24px; height: 24px; }
 
-/* ---------------- Logo ---------------- */
 .logo-container {
   flex-shrink: 0;
   width: 150px;
@@ -79,7 +76,6 @@ html, body {
 }
 .logo { width: 100%; height: 100%; object-fit: contain; }
 
-/* ---------------- Desktop Navigation ---------------- */
 .desktop-nav {
   display: none;
   align-items: center;
@@ -127,7 +123,6 @@ html, body {
 .dropdown-item:first-child { border-radius: 8px 8px 0 0; }
 .dropdown-item:last-child { border-radius: 0 0 8px 8px; }
 
-/* ---------------- Actions ---------------- */
 .header-actions {
   display: flex;
   align-items: center;
@@ -162,7 +157,6 @@ html, body {
 .user-btn { color: #111827; }
 .user-btn:hover { color: #0f766e; }
 
-/* ---------------- Mobile Actions ---------------- */
 .mobile-action {
   display: flex;
   align-items: center;
@@ -177,7 +171,6 @@ html, body {
 .mobile-action:last-child { color: #111827; }
 .mobile-action:last-child:hover { color: #0f766e; }
 
-/* ---------------- Mobile Menu ---------------- */
 .mobile-menu {
   background: #fff;
   border-top: 1px solid #e5e7eb;
@@ -207,7 +200,6 @@ html, body {
 }
 .mobile-menu-item:hover { color: #2563eb; background-color: #f9fafb; }
 
-/* ---------------- Media Queries ---------------- */
 @media (min-width: 768px) {
   .desktop-nav { display: flex; }
   .desktop-action { display: flex; }
