@@ -1,0 +1,450 @@
+.custom-section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 87px;
+  overflow-x: hidden;
+}
+
+.custom-banner {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ✅ Responsive rule (Tailwind’s md:h-[223px]) */
+@media (min-width: 768px) {
+  .custom-banner {
+    height: 223px;
+  }
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+.layout-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  padding: 0 1rem; /* ✅ matches search bar edge */
+  gap: 2rem;
+}
+
+/* ✅ Responsive rule (md:flex-row) */
+@media (min-width: 768px) {
+  .layout-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 2rem; /* ✅ consistent with search bar */
+  }
+}
+
+.text-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 0; /* ✅ no extra spacing */
+}
+
+/* ✅ Responsive overrides */
+@media (min-width: 768px) {
+  .text-block {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.heading-title {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .heading-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.subtitle-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+  .subtitle-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.button-container {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .button-container {
+    display: flex;
+    margin-left: auto; /* ✅ hugs right edge */
+  }
+}
+
+.tripadvisor-logo-before {
+  width: 3rem;
+  height: 3rem;
+}
+
+.small-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+
+.rating-text {
+  font-weight: 600;
+}
+.reviews-count-hero {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+.tripadvisor-icon-before {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 1rem; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  padding: 1rem;
+  flex: 2;
+}
+
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row; 
+    padding: 1rem 1.5rem;
+  }
+}
+.box-container {
+ position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #D9D9D933;
+
+}
+
+@media (min-width: 768px) {
+  .box-container {
+    width: 33.3333%; 
+  }
+}
+.date-label {
+ position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.date-input{
+ width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+.date-input::-webkit-datetime-edit-fields-wrapper,
+.date-input::-webkit-datetime-edit-day-field {
+  display: none;
+}
+
+.date-placeholder {
+ position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+  font-size: 1rem;
+}
+.date-input:valid + .date-placeholder {
+  display: none;
+}
+
+.select-input {
+  width: 100%;
+  outline: none;     
+  border: none;      
+  background: none;  
+  color: #374151;   
+  font-size: 1rem; 
+}
+
+.btn-primary {
+   background-color: #f97316;       /* orange */
+  color: #ffffff;
+  padding: 0.75rem 2rem;           /* more horizontal padding */
+  border-radius: 9999px;           /* ✅ pill shape */
+  font-weight: 400;                /* bold */
+  font-size: 1.125rem;             /* ✅ text-lg (18px) */
+  line-height: 1.5rem;             /* balanced vertical alignment */
+  display: inline-flex;            /* shrink to fit content */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 150px;                /* ensures good width */
+  height: 52px;                    /* slightly taller */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-primary:focus {
+  outline: none;        /* ✅ removes black outline on focus */
+  box-shadow: none;     /* ✅ removes focus glow in some browsers */
+}
+
+.btn-primary:hover {
+  background-color: #ea580c; /* hover:bg-orange-600 */
+  transform: translateY(-2px); 
+}
+
+/* Responsive (md:) */
+@media (min-width: 768px) {
+  .btn-primary {
+    width: auto; /* md:w-auto */
+  }
+}
+
+
+.container-season {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-season{
+    margin-top: 100px;
+  }
+}
+.card-season {
+ width: 100%;
+  max-width: 1240px;
+  height: 126px;
+  background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  position: relative;   /* contain absolute shapes */
+  overflow: hidden;     /* cut off extra circle outside */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+              0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  .card-season {
+    height: 126px;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.container-sale-season {
+   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1; /* content above shape */
+  
+}
+
+.container-sale-season::before {
+   content: "";
+  position: absolute;
+  width: 299px;
+  height: 299px;
+  background: #9CDCFF;
+  border-radius: 50%;
+  left: -75px;
+  top: -86px;
+  z-index: 0;   /* ⬅️ push the circle behind everything */
+  clip-path: circle(100% at 0 100%);
+}
+
+.profile-image {
+ width: 11rem;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2; 
+}
+
+@media (min-width: 768px) {
+  .profile-image {
+    display: block;
+  }
+}
+.container-op {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container-op {
+    text-align: left;
+    margin-top: -2px;
+    margin-left: 1.5rem;  /* ✅ pushes text to the right */
+  }
+}
+
+.heading-op {
+  font-size: 1rem;         /* default mobile */
+  font-weight: 700;
+  margin-bottom: 0.25rem;  /* reduced spacing */
+  font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+  .heading-op {
+    font-size: 1.5rem;   /* ✅ smaller than before */
+    line-height: 1.4;     /* balanced line height */
+    
+  }
+}
+
+.tagline-op {
+  font-size: 0.75rem;     /* ✅ smaller tagline for desktop */
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .tagline-op {
+    font-size: 0.875rem;  /* just under 14px */
+    
+  }
+}
+
+.hero-image-op {
+  display: none;
+  width: 14rem;   /* a little bigger */
+  height: auto;   /* let it scale naturally */
+  object-fit: contain;
+  align-self: center; 
+  margin-right: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-image-op {
+    display: block;
+  }
+}

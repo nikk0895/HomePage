@@ -4,7 +4,9 @@
   margin: 0 auto;
   padding: 2rem 1rem;
 }
-
+.page-2.review-section {
+    background: #f9f9f9;
+}
 .review-container {
   max-width: 1240px;
   margin: 0 auto;

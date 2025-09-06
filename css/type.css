@@ -1,0 +1,124 @@
+
+.water-sports
+ {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+/* .water-sports {
+  background: red;
+} */
+.section-header {
+  position: relative;            /* 👈 add this */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.section-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0D0D0D;
+  font-family: sans-serif;
+}
+.section-header a {
+  color: #f97316;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+.section-header a:hover {
+  text-decoration: underline;
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.water-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 215px;
+}
+.water-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+}
+.card-overlay h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.controls {
+position: absolute;
+  top: 0;                         /* adjust to taste (e.g., 6px) */
+  right: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.control-btn {
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.control-btn:hover {
+  background: #e55a00;
+}
+
+
+@media (max-width: 1024px) {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .water-card
+  {
+    flex: 0 0 80%;
+    min-width: 280px;
+    max-width: 320px;
+    scroll-snap-align: start;
+  }
+  .cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .cards-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+  @media (max-width: 1023px) {
+  .controls {
+    display: none;
+  }
+}

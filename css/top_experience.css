@@ -10,7 +10,7 @@
 }
 .ae-section-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .ae-section-title h2 {
   font-size: 32px;
@@ -134,9 +134,20 @@
     overflow-x: visible;
     scroll-snap-type: none;
     -webkit-overflow-scrolling: auto;
+
+    max-width: 1240px; /* 🔑 limit width */
+    margin: 0 auto;    /* 🔑 center the grid */
   }
+
   .ae-experience-card {
     width: 100%;
-    height: 258px;
+    aspect-ratio: 16 / 9; /* equal proportional cards */
+    height: auto;
+  }
+
+  .ae-experience-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
